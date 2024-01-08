@@ -1,0 +1,17 @@
+.image {
+  border: 2px solid black;
+  float: right;
+  text-align: center;
+  margin: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding-left: 10px;
+  padding-right: 10px;
+}
