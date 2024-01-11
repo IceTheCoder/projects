@@ -15,3 +15,7 @@ table, th, td {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+thead {
+  font-weight: bold;
+}
