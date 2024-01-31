@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-container {
+  width: 600px;
+  margin: auto;
+}
+
 .image {
   border: 2px solid black;
   float: right;
