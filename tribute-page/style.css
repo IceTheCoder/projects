@@ -24,26 +24,16 @@
   padding-right: 20px;
 }
 
-@media only screen and (min-width: 2160px) {
-  .parent {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .image-container {
-    background-color: green;
-    border: 6px solid black;
-    display: flex;
-    flex-direction: column;
-  }
+.image {
+  border: 2px solid black;
+  float: right;
+  text-align: center;
+  margin: 130px 20px 130px 20px;
 }
 
 @media only screen and (min-width: 2160px) {
+  /* Keep the text centered */
   .text-container {
-    border: 6px solid red;
-    margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-left: auto;
     position: absolute;
     left: 50%;
@@ -58,13 +48,9 @@
   .text-container {
     width: 100%;
   }
-}
-
-.image {
-  border: 2px solid black;
-  float: right;
-  text-align: center;
-  margin: 130px 20px 130px 20px;
+  .image {
+    margin: 20px;
+  }
 }
 
 p, ul, ol, dl {
