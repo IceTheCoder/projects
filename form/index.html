@@ -7,13 +7,13 @@
   <title>Form</title>
 </head>
 <body>
-    <div class="title">
+    <header>
       <h1>Survey</h1>
       <p><i>All questions are optional.</i></p>  
-    </div>
+    </header>
     <form>
       <div class="parent">
-        <div class="name">
+        <section class="name">
           <h2>Personal information</h2>
           <label for="fname">First name</label><br>
           <input type="text" id="fname" name="fname">
@@ -21,19 +21,19 @@
           <label for="lname">Last name</label><br>
           <input type="text" id="lname" name="lname">
           <br>
-        </div>
-        <div class="dob">
-          <h2>Date of birth</h2>
+        </section>
+        <section class="dob">
+          <label for="dob"><h2>Date of birth</h2></label>
           <input type="month" id="dob" name="dob" min="1907-03-04" max="2024-02-23">  
-        </div>
-        <div class="contact">
+        </section>
+        <section class="contact">
           <h2>Contact</h2>
           <label for="email">Email</label><br>
           <input type="email" id="email" name="email"><br>
           <label for="phone">Phone</label><br>
           <input type="tel" id="phone" name="phone"><br>  
-        </div>
-        <div class="education-career">
+        </section>
+        <section class="education-career">
           <h2>Education & Career</h2>
           <h3>Education</h3>
           <input type="checkbox" id="student" name="student" value="Currently a student">
@@ -62,10 +62,10 @@
           <label for="emplolyed">Employed</label><br>
           <input type="radio" id="selfemployed" name="employment" value="Self-employed">
           <label for="selfemployed">Self-employed</label><br>
-          <h3>CV</h3>
+          <label for="cv"><h3>CV</h3></label>
           <input type="file" id="cv" name="cv" accept=".doc,.docx,.pages,.md,.eml,.rtf,.txt,.log,.asc,.msg,.wps,.jpynb">
-        </div>
-        <div class="programming">
+        </section>
+        <section class="programming">
           <h2>Programming languages</h2>
           <h3>Choose the programming languages you know</h3>
           <input type="checkbox" id="js" name="js" value="JavaScript">
@@ -113,7 +113,7 @@
           <label for="number">Year</label>
           <input type="number" id="year" name="year" min="1945" max="2024">
       
-          <h3>How did you get into coding?</h3>
+          <label for="start"><h3>How did you get into coding?</h3></label>
           <input type="text" id="start" name="start" size="50">
       
           <h3>Rate your programmer skills on a scale from 1 to 5</h3>
@@ -127,18 +127,18 @@
             <option value="4"></option>
             <option value="5"></option>
           </datalist>
-        </div>
-        <div class="colour">
+        </section>
+        <section class="colour">
           <h2>Colours</h2>
           <h3>Choose your favourite colour</h3>
           <label for="color">Favourite colour</label><br>
           <input type="color" id="color" name="color"><br>  
-        </div>
+        </section>
       </div>
-      <div class="submit-reset">
+      <section class="submit-reset">
         <input type="image" src="submit.png" width="100"><br>
         <input type="reset" id="reset">  
-      </div>
+      </section>
     </form>
     <footer>
       <h2>Credits</h2>
