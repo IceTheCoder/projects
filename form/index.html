@@ -3,158 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Form</title>
 </head>
 <body>
-  <h1>Survey</h1>
-  <p><i>All questions are optional.</i></p>
-  <form>
-    <h2>Personal information</h2>
-    <label for="fname">First name</label><br>
-    <input type="text" id="fname" name="fname">
-    <br>
-    <label for="lname">Last name</label><br>
-    <input type="text" id="lname" name="lname">
-    <br>
-    <h3>Date of birth</h3>
-    <input type="date" id="dob" name="dob" min="1907-03-04" max="2024-02-23">
-    <h3>Choose your age group</h3>
-    <input type="radio" id="&lt;12" name="age" value="&lt;12">
-    <label for="&lt;12">&lt;12</label>
-    <br>
-    <input type="radio" id="13-17" name="age" value="13 - 18">
-    <label for="13-17">13 - 17</label>
-    <br>
-    <input type="radio" id="18-24" name="age" value="18 - 24">
-    <label for="18-24">18 - 24</label>
-    <br>
-    <input type="radio" id="25-34" name="age" value="25 - 34">
-    <label for="25-34">25 - 34</label>
-    <br>
-    <input type="radio" id="35-49" name="age" value="35 - 49">
-    <label for="35-49">35 - 49</label>
-    <br>
-    <input type="radio" id="50-64" name="age" value="50 - 64">
-    <label for="50-64">50 - 64</label>
-    <br>
-    <input type="radio" id="65-84" name="age" value="65 - 84">
-    <label for="65-84">65 - 84</label>
-    <br>
-    <input type="radio" id="85+" name="age" value="85+">
-    <label for="85+">85+</label>
-    <br>
-
-    <h2>Contact</h2>
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email">
-    <br>
-    <label for="phone">Phone</label><br>
-    <input type="tel" id="phone" name="phone">
-
-    <br>
-
-    <h2>Education & Career</h2>
-    <h3>Education</h3>
-    <input type="checkbox" id="student" name="student" value="Currently a student">
-    <label for="student">Currently a student</label>
-
-    <h4>Education level</h4>
-    <input type="radio" id="primary-school" name="education-level" value="Primary School">
-    <label for="primary-school">Primary School</label><br>
-    <input type="radio" id="middle-school" name="education-level" value="Middle School">
-    <label for="middle-school">Middle School</label><br>
-    <input type="radio" id="high-school" name="education-level" value="High School">
-    <label for="high-school">High School</label><br>
-    <input type="radio" id="associate" name="education-level" value="Associate Degree">
-    <label for="associate">Associate Degree</label><br>
-    <input type="radio" id="bachelor" name="education-level" value="Bachelor's Degree">
-    <label for="bachelor">Bachelor's Degree</label><br>
-    <input type="radio" id="master" name="education-level" value="Master's Degree">
-    <label for="master">Master's Degree</label><br>
-    <input type="radio" id="doctoral" name="education-level" value="Doctoral's Degree">
-    <label for="doctoral">Doctoral's Degree</label><br>
-
-    <h3>Employment</h3>
-    <input type="radio" id="unemployed" name="employment" value="Unemployed">
-    <label for="unemployed">Unemployed</label><br>
-    <input type="radio" id="employed" name="employment" value="Employed">
-    <label for="emplolyed">Employed</label><br>
-    <input type="radio" id="selfemployed" name="employment" value="Self-employed">
-    <label for="selfemployed">Self-employed</label><br>
-
-    <h2>Programming languages</h2>
-    <h3>Choose the programming languages you know</h3>
-    <input type="checkbox" id="js" name="js" value="JavaScript">
-    <label for="js">JavaScript</label><br> 
-    <input type="checkbox" id="java" name="java" value="Java">
-    <label for="java">Java</label><br>
-    <input type="checkbox" id="python" name="python" value="Python">
-    <label for="python">Python</label><br>
-    <input type="checkbox" id="c++" name="c++" value="C++">
-    <label for="c++">C++</label><br>
-    <input type="checkbox" id="c" name="c" value="C">
-    <label for="c">C</label><br>
-    <input type="checkbox" id="r" name="r" value="R">
-    <label for="r">R</label><br>
-    <input type="checkbox" id="c#" name="c#" value="C#">
-    <label for="c#">C#</label><br>
-    <input type="checkbox" id="ruby" name="ruby" value="Ruby">
-    <label for="ruby">Ruby</label><br>
-    <input type="checkbox" id="rust" name="rust" value="Rust">
-    <label for="rust">Rust</label><br>
-    <input type="checkbox" id="visualbasic" name="visualbasic" value="Visual Basic">
-    <label for="visualbasic">Visual Basic</label><br>
-    <input type="checkbox" id="swift" name="swift" value="Swift">
-    <label for="swift">Swift</label><br>
-    <input type="checkbox" id="go" name="go" value="Go">
-    <label for="go">Go</label><br>
-    <input type="checkbox" id="php" name="php" value="PHP">
-    <label for="php">PHP</label><br>
-    <input type="checkbox" id="sql" name="sql" value="SQL">
-    <label for="sql">SQL</label><br>
-    <input type="checkbox" id="julia" name="julia" value="Julia">
-    <label for="julia">Julia</label><br>
-    <input type="checkbox" id="cobol" name="cobol" value="COBOL">
-    <label for="cobol">COBOL</label><br>
-    <input type="checkbox" id="julia" name="julia" value="Julia">
-    <label for="julia">Julia</label><br>
-    <input type="checkbox" id="objectivec" name="objectivec" value="Objective C">
-    <label for="objectivec">Objective C</label><br>
-    <input type="checkbox" id="haskell" name="haskell" value="Haskell">
-    <label for="haskell">Haskell</label><br>
-    <input type="checkbox" id="kotlin" name="kotlin" value="Kotlin">
-    <label for="kotlin">Kotlin</label><br>
-
-    <br>
+    <h1>Survey</h1>
+    <p><i>All questions are optional.</i></p>
+    <form>
+      <div class="name">
+        <h2>Personal information</h2>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+      </div>
+      <div class="dob">
+        <h3>Date of birth</h3>
+        <input type="month" id="dob" name="dob" min="1907-03-04" max="2024-02-23">  
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Phone</label><br>
+        <input type="tel" id="phone" name="phone"><br>  
+      </div>
+      <div class="education-career">
+        <h2>Education & Career</h2>
+        <h3>Education</h3>
+        <input type="checkbox" id="student" name="student" value="Currently a student">
+        <label for="student">Currently a student</label>
     
-    <h3>What year did you start coding?</h3>
-    <label for="number">Year</label>
-    <input type="number" id="year" name="year" min="1945" max="2024">
-
-    <h3>Rate your programmer skills on a scale from 1 to 5</h3>
-    <label for="rating">Rating</label>
-    <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="1" list="markers">
-
-    <datalist id="markers">
-      <option value="1"></option>
-      <option value="2"></option>
-      <option value="3"></option>
-      <option value="4"></option>
-      <option value="5"></option>
-    </datalist>
-
-    <h3>CV</h3>
-    <input type="file" id="cv" accept=".doc,.docx,.pages,.md,.eml,.rtf,.txt,.log,.asc,.msg,.wps,.jpynb">
-
-    <h2>Colours</h2>
-    <h3>Choose your favourite colour</h3>
-    <label for="color">Favourite colour</label>
-
-    <br>
-    <input type="color" id="color" name="color">
-
-    <br>
-    <input type="submit" value="Submit">
-  </form>
+        <h4>Education level</h4>
+        <input type="radio" id="primary-school" name="education-level" value="Primary School">
+        <label for="primary-school">Primary School</label><br>
+        <input type="radio" id="middle-school" name="education-level" value="Middle School">
+        <label for="middle-school">Middle School</label><br>
+        <input type="radio" id="high-school" name="education-level" value="High School">
+        <label for="high-school">High School</label><br>
+        <input type="radio" id="associate" name="education-level" value="Associate Degree">
+        <label for="associate">Associate Degree</label><br>
+        <input type="radio" id="bachelor" name="education-level" value="Bachelor's Degree">
+        <label for="bachelor">Bachelor's Degree</label><br>
+        <input type="radio" id="master" name="education-level" value="Master's Degree">
+        <label for="master">Master's Degree</label><br>
+        <input type="radio" id="doctoral" name="education-level" value="Doctoral's Degree">
+        <label for="doctoral">Doctoral's Degree</label><br>
+    
+        <h3>Employment</h3>
+        <input type="radio" id="unemployed" name="employment" value="Unemployed">
+        <label for="unemployed">Unemployed</label><br>
+        <input type="radio" id="employed" name="employment" value="Employed">
+        <label for="emplolyed">Employed</label><br>
+        <input type="radio" id="selfemployed" name="employment" value="Self-employed">
+        <label for="selfemployed">Self-employed</label><br>
+        <h3>CV</h3>
+        <input type="file" id="cv" accept=".doc,.docx,.pages,.md,.eml,.rtf,.txt,.log,.asc,.msg,.wps,.jpynb">
+      </div>
+      <div class="programming">
+        <h2>Programming languages</h2>
+        <h3>Choose the programming languages you know</h3>
+        <input type="checkbox" id="js" name="js" value="JavaScript">
+        <label for="js">JavaScript</label><br> 
+        <input type="checkbox" id="java" name="java" value="Java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="python" name="python" value="Python">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="c++" name="c++" value="C++">
+        <label for="c++">C++</label><br>
+        <input type="checkbox" id="c" name="c" value="C">
+        <label for="c">C</label><br>
+        <input type="checkbox" id="r" name="r" value="R">
+        <label for="r">R</label><br>
+        <input type="checkbox" id="c#" name="c#" value="C#">
+        <label for="c#">C#</label><br>
+        <input type="checkbox" id="ruby" name="ruby" value="Ruby">
+        <label for="ruby">Ruby</label><br>
+        <input type="checkbox" id="rust" name="rust" value="Rust">
+        <label for="rust">Rust</label><br>
+        <input type="checkbox" id="visualbasic" name="visualbasic" value="Visual Basic">
+        <label for="visualbasic">Visual Basic</label><br>
+        <input type="checkbox" id="swift" name="swift" value="Swift">
+        <label for="swift">Swift</label><br>
+        <input type="checkbox" id="go" name="go" value="Go">
+        <label for="go">Go</label><br>
+        <input type="checkbox" id="php" name="php" value="PHP">
+        <label for="php">PHP</label><br>
+        <input type="checkbox" id="sql" name="sql" value="SQL">
+        <label for="sql">SQL</label><br>
+        <input type="checkbox" id="julia" name="julia" value="Julia">
+        <label for="julia">Julia</label><br>
+        <input type="checkbox" id="cobol" name="cobol" value="COBOL">
+        <label for="cobol">COBOL</label><br>
+        <input type="checkbox" id="julia" name="julia" value="Julia">
+        <label for="julia">Julia</label><br>
+        <input type="checkbox" id="objectivec" name="objectivec" value="Objective C">
+        <label for="objectivec">Objective C</label><br>
+        <input type="checkbox" id="haskell" name="haskell" value="Haskell">
+        <label for="haskell">Haskell</label><br>
+        <input type="checkbox" id="kotlin" name="kotlin" value="Kotlin">
+        <label for="kotlin">Kotlin</label><br>
+        
+        <h3>What year did you start coding?</h3>
+        <label for="number">Year</label>
+        <input type="number" id="year" name="year" min="1945" max="2024">
+    
+        <h3>How did you get into coding?</h3>
+        <input type="text" size="100">
+    
+        <h3>Rate your programmer skills on a scale from 1 to 5</h3>
+        <label for="rating">Rating</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="1" list="markers">
+    
+        <datalist id="markers">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+        </datalist>
+      </div>
+      <div class="colour">
+        <h2>Colours</h2>
+        <h3>Choose your favourite colour</h3>
+        <label for="color">Favourite colour</label><br>
+        <input type="color" id="color" name="color"><br>  
+      </div>
+      <div class="submit-reset">
+        <input type="image" src="submit.png" width="100"><br>
+        <input type="reset">  
+      </div>
+    </form>
+    <footer>
+      <h2>Credits</h2>
+      <a href="https://www.flaticon.com/free-icons/submit" title="submit icons">Submit icons created by Freepik - Flaticon</a>
+    </footer>
+  </div>
 </body>
 </html>
