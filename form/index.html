@@ -39,75 +39,83 @@
           <input type="checkbox" id="student" name="student" value="Currently a student">
           <label for="student">Currently a student</label>
       
-          <h4>Education level</h4>
-          <input type="radio" id="primary-school" name="education-level" value="Primary School">
-          <label for="primary-school">Primary School</label><br>
-          <input type="radio" id="middle-school" name="education-level" value="Middle School">
-          <label for="middle-school">Middle School</label><br>
-          <input type="radio" id="high-school" name="education-level" value="High School">
-          <label for="high-school">High School</label><br>
-          <input type="radio" id="associate" name="education-level" value="Associate Degree">
-          <label for="associate">Associate Degree</label><br>
-          <input type="radio" id="bachelor" name="education-level" value="Bachelor's Degree">
-          <label for="bachelor">Bachelor's Degree</label><br>
-          <input type="radio" id="master" name="education-level" value="Master's Degree">
-          <label for="master">Master's Degree</label><br>
-          <input type="radio" id="doctoral" name="education-level" value="Doctoral's Degree">
-          <label for="doctoral">Doctoral's Degree</label><br>
-      
-          <h3>Employment</h3>
-          <input type="radio" id="unemployed" name="employment" value="Unemployed">
-          <label for="unemployed">Unemployed</label><br>
-          <input type="radio" id="employed" name="employment" value="Employed">
-          <label for="emplolyed">Employed</label><br>
-          <input type="radio" id="selfemployed" name="employment" value="Self-employed">
-          <label for="selfemployed">Self-employed</label><br>
-          <label for="cv"><h3>CV</h3></label>
-          <input type="file" id="cv" name="cv" accept=".doc,.docx,.pages,.md,.eml,.rtf,.txt,.log,.asc,.msg,.wps,.jpynb">
+          <fieldset>
+            <legend><h4>Education level</h4></legend>
+
+            <input type="radio" id="primary-school" name="education-level" value="Primary School">
+            <label for="primary-school">Primary School</label><br>
+            <input type="radio" id="middle-school" name="education-level" value="Middle School">
+            <label for="middle-school">Middle School</label><br>
+            <input type="radio" id="high-school" name="education-level" value="High School">
+            <label for="high-school">High School</label><br>
+            <input type="radio" id="associate" name="education-level" value="Associate Degree">
+            <label for="associate">Associate Degree</label><br>
+            <input type="radio" id="bachelor" name="education-level" value="Bachelor's Degree">
+            <label for="bachelor">Bachelor's Degree</label><br>
+            <input type="radio" id="master" name="education-level" value="Master's Degree">
+            <label for="master">Master's Degree</label><br>
+            <input type="radio" id="doctoral" name="education-level" value="Doctoral's Degree">
+            <label for="doctoral">Doctoral's Degree</label><br>  
+          </fieldset>
+          
+          <fieldset>
+            <legend><h3>Employment</h3></legend>
+            <input type="radio" id="unemployed" name="employment" value="Unemployed">
+            <label for="unemployed">Unemployed</label><br>
+            <input type="radio" id="employed" name="employment" value="Employed">
+            <label for="emplolyed">Employed</label><br>
+            <input type="radio" id="selfemployed" name="employment" value="Self-employed">
+            <label for="selfemployed">Self-employed</label><br>
+            <label for="cv"><h3>CV</h3></label>
+            <input type="file" id="cv" name="cv" accept=".doc,.docx,.pages,.md,.eml,.rtf,.txt,.log,.asc,.msg,.wps,.jpynb">  
+          </fieldset>
         </section>
         <section class="programming">
           <h2>Programming languages</h2>
-          <h3>Choose the programming languages you know</h3>
-          <input type="checkbox" id="js" name="js" value="JavaScript">
-          <label for="js">JavaScript</label><br> 
-          <input type="checkbox" id="java" name="java" value="Java">
-          <label for="java">Java</label><br>
-          <input type="checkbox" id="python" name="python" value="Python">
-          <label for="python">Python</label><br>
-          <input type="checkbox" id="c++" name="c++" value="C++">
-          <label for="c++">C++</label><br>
-          <input type="checkbox" id="c" name="c" value="C">
-          <label for="c">C</label><br>
-          <input type="checkbox" id="r" name="r" value="R">
-          <label for="r">R</label><br>
-          <input type="checkbox" id="c#" name="c#" value="C#">
-          <label for="c#">C#</label><br>
-          <input type="checkbox" id="ruby" name="ruby" value="Ruby">
-          <label for="ruby">Ruby</label><br>
-          <input type="checkbox" id="rust" name="rust" value="Rust">
-          <label for="rust">Rust</label><br>
-          <input type="checkbox" id="visualbasic" name="visualbasic" value="Visual Basic">
-          <label for="visualbasic">Visual Basic</label><br>
-          <input type="checkbox" id="swift" name="swift" value="Swift">
-          <label for="swift">Swift</label><br>
-          <input type="checkbox" id="go" name="go" value="Go">
-          <label for="go">Go</label><br>
-          <input type="checkbox" id="php" name="php" value="PHP">
-          <label for="php">PHP</label><br>
-          <input type="checkbox" id="sql" name="sql" value="SQL">
-          <label for="sql">SQL</label><br>
-          <input type="checkbox" id="julia" name="julia" value="Julia">
-          <label for="julia">Julia</label><br>
-          <input type="checkbox" id="cobol" name="cobol" value="COBOL">
-          <label for="cobol">COBOL</label><br>
-          <input type="checkbox" id="julia" name="julia" value="Julia">
-          <label for="julia">Julia</label><br>
-          <input type="checkbox" id="objectivec" name="objectivec" value="Objective C">
-          <label for="objectivec">Objective C</label><br>
-          <input type="checkbox" id="haskell" name="haskell" value="Haskell">
-          <label for="haskell">Haskell</label><br>
-          <input type="checkbox" id="kotlin" name="kotlin" value="Kotlin">
-          <label for="kotlin">Kotlin</label><br>
+          <fieldset>
+            <legend><h3>Choose the programming languages you know</h3></legend>
+
+            <input type="checkbox" id="js" name="js" value="JavaScript">
+            <label for="js">JavaScript</label><br> 
+            <input type="checkbox" id="java" name="java" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="python" name="python" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="c++" name="c++" value="C++">
+            <label for="c++">C++</label><br>
+            <input type="checkbox" id="c" name="c" value="C">
+            <label for="c">C</label><br>
+            <input type="checkbox" id="r" name="r" value="R">
+            <label for="r">R</label><br>
+            <input type="checkbox" id="c#" name="c#" value="C#">
+            <label for="c#">C#</label><br>
+            <input type="checkbox" id="ruby" name="ruby" value="Ruby">
+            <label for="ruby">Ruby</label><br>
+            <input type="checkbox" id="rust" name="rust" value="Rust">
+            <label for="rust">Rust</label><br>
+            <input type="checkbox" id="visualbasic" name="visualbasic" value="Visual Basic">
+            <label for="visualbasic">Visual Basic</label><br>
+            <input type="checkbox" id="swift" name="swift" value="Swift">
+            <label for="swift">Swift</label><br>
+            <input type="checkbox" id="go" name="go" value="Go">
+            <label for="go">Go</label><br>
+            <input type="checkbox" id="php" name="php" value="PHP">
+            <label for="php">PHP</label><br>
+            <input type="checkbox" id="sql" name="sql" value="SQL">
+            <label for="sql">SQL</label><br>
+            <input type="checkbox" id="julia" name="julia" value="Julia">
+            <label for="julia">Julia</label><br>
+            <input type="checkbox" id="cobol" name="cobol" value="COBOL">
+            <label for="cobol">COBOL</label><br>
+            <input type="checkbox" id="julia" name="julia" value="Julia">
+            <label for="julia">Julia</label><br>
+            <input type="checkbox" id="objectivec" name="objectivec" value="Objective C">
+            <label for="objectivec">Objective C</label><br>
+            <input type="checkbox" id="haskell" name="haskell" value="Haskell">
+            <label for="haskell">Haskell</label><br>
+            <input type="checkbox" id="kotlin" name="kotlin" value="Kotlin">
+            <label for="kotlin">Kotlin</label><br>
+          </fieldset>
           
           <h3>What year did you start coding?</h3>
           <label for="number">Year</label>
