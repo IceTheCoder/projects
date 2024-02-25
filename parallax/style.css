@@ -84,7 +84,10 @@ h2 {
   justify-content: space-around;
   width: 80vw;
   align-items: center;
-  height: 250px;
+}
+
+p, .para-2 ul {
+  height: 17vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -98,17 +101,13 @@ h2 {
   }
 }
 
-p, ul {
+p, .para-2 ul {
+  color: white;
   width: 80vw;
-  height: 10vh;
   text-align: center;
   font-size: 24px;
   list-style: none;
-}
-
-p, .para-2 ul {
-  color: white;
-}
+} 
 
 p {
   font-weight: 300;
@@ -119,7 +118,6 @@ ul {
 }
 
 .para-1, .para-2 {
-  margin-top: 0px;
   display: table;
   height: 250px; /* Ensure container has a defined height */
   background-color: gray;
@@ -134,7 +132,14 @@ ul {
 
 .para-1, .para-2 {
   position: relative;
-  top: -125px;
+  top: -95px;
+}
+
+@media screen and (max-height: 525px) {
+  .para-1, .para-2 {
+    position: relative;
+    top: -17vh;
+  }
 }
 
 .parallax-1 {
