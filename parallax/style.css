@@ -36,6 +36,12 @@ h1 {
   font-weight: 100;
 }
 
+@media screen and (max-width: 900px) {
+  .title {
+    margin-top: 10vh;
+  }
+}
+
 h2 {
   text-align: center;
   color: black;
@@ -44,18 +50,31 @@ h2 {
 }
 
 .para-2 ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 70vw;
+  width: 100vw;
   list-style: none;
 }
+
+.para-2 ul li {
+  margin: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .para-2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    list-style: none;
+  }  
+}
+
+
 
 p, ul {
   background-color: gray;
   color: white;
-  width: 60vw;
+  width: 80vw;
   height: 10vh;
   text-align: center;
   font-size: 24px;
