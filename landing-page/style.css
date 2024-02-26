@@ -7,6 +7,16 @@
 body {
   display: flex;
   flex-direction: row;
+  margin: 10px;
+}
+
+div {
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
 }
 
 .page {
@@ -17,4 +27,29 @@ body {
 .content {
   display: flex;
   flex-direction: row;
+}
+
+.email, .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 48px;
+}
+
+#email {
+  margin-left: 30px;
+  height: 50px;
+  width: 600px;
+  font-size: 36px;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
