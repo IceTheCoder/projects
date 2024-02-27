@@ -62,7 +62,6 @@ label {
 }
 
 #email {
-  margin-left: 30px;
   height: 50px;
   width: 600px;
   font-size: 36px;
@@ -123,6 +122,22 @@ footer p {
 }
 
 .img-and-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, .call-to-action {
+  background-color: #00246B;
+  color: white;
+}
+
+body {
+  background-color: #e3edff;
+}
+
+.image {
   display: flex;
   flex-direction: column;
   justify-content: center;
