@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 body {
   display: flex;
   flex-direction: column;
+  font-weight: 300;
 }
 
 .parent {
@@ -27,10 +29,16 @@ div {
 h1 {
   text-align: center;
   font-size: 72px;
+  height: 100px;
+  line-height: 100px;
+  font-weight: 100;
+  height: 100%;
+  line-height: 1.5;
 }
 
 h2, label {
   font-size: 48px;
+  font-weight: 400;
 }
 
 li, p {
@@ -49,16 +57,29 @@ footer p {
 }
 
 .button {
-  height: 75px;
+  min-height: 75px;
   width: 12vw;
   min-width: 130px;
   margin: 20px 30px 20px 30px;
-  font-size: 24px;
+  font-size: 36px;
   border: none;
-  background-color: #2F3C7E;
+  background-color: #00246B;
   color: white;
   cursor: pointer;
   box-shadow: 0px 10px 5px 0px black;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.button:hover, .button:focus {
+  background-color: rgb(17, 22, 46);
+}
+
+.button:active {
+  background-color: rgb(4, 6, 12);
+  position: relative;
+  top: 10px;
+  box-shadow: none;
 }
 
 @media screen and (max-width: 1140px) {
@@ -101,6 +122,8 @@ p {
 .page {
   display: flex;
   flex-direction: column;
+  background-color: #2F3C7E;
+  color: white;
 }
 
 .content {
@@ -110,6 +133,7 @@ p {
 
 .contact {
   width: 100%;
+  margin: 0;
 }
 
 .reviews {
@@ -149,17 +173,6 @@ form {
   }
 }
 
-.button:hover, .button:focus {
-  background-color: #1b2349;
-}
-
-.button:active {
-  background-color: #0b0f1f;
-  position: relative;
-  top: 10px;
-  box-shadow: none;
-}
-
 .reviews {
   display: flex;
   flex-direction: column;
@@ -172,9 +185,10 @@ form {
   align-items: center;
 }
 
-h1, .call-to-action {
-  background-color: #00246B;
+h1, form {
+  background-color: #8AAAE5;
   color: white;
+  margin: 0;
 }
 
 body {
@@ -189,7 +203,7 @@ body {
 }
 
 .image p {
-  width: 25vw;
+  width: 100%;
 }
 
 #coding-1 {
