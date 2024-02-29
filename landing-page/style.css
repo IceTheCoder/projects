@@ -1,8 +1,21 @@
+/* Reset and general styles */  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Roboto';
+  font-weight: 300;
+  background-color: #e3edff;
+}
+
+/* Layout styles */
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
 }
 
 body, .page, .form-inputs, .reviews, .img-and-contact, .image {
@@ -10,12 +23,46 @@ body, .page, .form-inputs, .reviews, .img-and-contact, .image {
   flex-direction: column;
 }
 
-main, .buttons, .content, .email-label, form {
+.buttons, .content, .email-label, form {
   display: flex;
   flex-direction: row;
 }
 
-/* Ordered based on their HTML order */
+div {
+  margin: 10px;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.image p {
+  width: 95%;
+}
+
+
+/* Header styles */
+h1, form, .headline {
+  background-color: #9BB6E9;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 72px;
+  height: 100px;
+  font-weight: 300;
+  height: 7%;
+  line-height: 1.5;
+}
+
+/* Form styles */
 form {
   justify-content: center;
 }
@@ -29,66 +76,16 @@ form {
   align-items: center;
 }
 
-.buttons {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.img-and-contact {
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  align-items: center;
-}
-
-body {
-  font-weight: 300;
-}
-
-main {
-  margin: 10px;
-}
-@media screen and (max-width: 1520px) {
-  main {
-    flex-direction: column;
-  }
-}
-
-div {
-  margin: 10px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 72px;
-  height: 100px;
-  line-height: 100px;
-  font-weight: 300;
-  height: 100%;
-  line-height: 1.5;
-}
-
-h2, label {
-  font-size: 48px;
-  font-weight: 400;
-}
-
-li, p {
-  font-size: 36px;
-}
-
 #email {
   height: 50px;
   width: 80%;
   font-size: 36px;
 }
 
-footer p {
-  font-size: 24px;
-  text-align: center;
+.buttons {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -115,50 +112,10 @@ footer p {
   position: relative;
   top: 10px;
   box-shadow: none;
+
 }
 
-@media screen and (max-width: 1140px) {
-  h1 {
-    font-size: 48px;
-  }
-  h2, label {
-    font-size: 36px;
-  }
-  li, p, #email {
-    font-size: 24px;
-  }
-  footer p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 675px) {
-  h1 {
-    font-size: 36px;
-  }
-  h2, label {
-    font-size: 24px;
-  }
-  li, p, #email {
-    font-size: 18px;
-  }
-  footer p {
-    font-size: 16px;
-  }
-}
-
-ul {
-  padding-left: 30px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-.page {
-  background-color: #2F3C7E;
-  color: white;
-}
-
+/* Content styles */
 .contact {
   width: 100%;
   margin: 0;
@@ -168,47 +125,97 @@ p {
   width: 100%;
 }
 
-@media screen and (max-width: 640px) {
-  form {
-    display: flex;
-    flex-direction: column;
-  }
+.img-and-contact {
+  justify-content: center;
+  align-items: center;
 }
 
-
-@media screen and (max-width: 960px) {
-  .content {
-    flex-direction: column;
-  }
+.image {
+  align-items: center;
 }
 
-h1, form, .headline {
-  background-color: #9BB6E9;
-  color: black;
-  margin: 0;
+/* Footer styles */
+footer p {
+  font-size: 24px;
   text-align: center;
 }
 
-body {
-  background-color: #e3edff;
+/* Font styles */
+h2, label {
+  font-size: 48px;
+  font-weight: 400;
 }
 
-.image p {
-  width: 100%;
+li, p {
+  font-size: 36px;
 }
 
+/* Colours */
+.page {
+  background-color: #2F3C7E;
+  color: white;
+}
+
+/* Images */
 #coding-1 {
-  width: 720px;
+  width: 100%;
   height: 1080px;
 }
 
 #coding-2 {
   margin-top: 30px;
-  width: 640px;
+  width: 100%;
   height: 450px;
 }
 
 #coding-1, #coding-2, #stars {
   max-width: 100%;
   height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1520px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+  h2, label {
+    font-size: 36px;
+  }
+  li, p, #email {
+    font-size: 36px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 675px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  li, p, #email {
+    font-size: 24px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    flex-direction: column;
+  }
 }
