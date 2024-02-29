@@ -87,6 +87,7 @@ footer p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1140px) {
