@@ -31,7 +31,7 @@ h1 {
   font-size: 72px;
   height: 100px;
   line-height: 100px;
-  font-weight: 100;
+  font-weight: 300;
   height: 100%;
   line-height: 1.5;
 }
@@ -194,8 +194,8 @@ form {
 }
 
 h1, form {
-  background-color: #8AAAE5;
-  color: white;
+  background-color: #9BB6E9;
+  color: black;
   margin: 0;
 }
 
