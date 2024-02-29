@@ -193,10 +193,11 @@ form {
   align-items: center;
 }
 
-h1, form {
+h1, form, .headline {
   background-color: #9BB6E9;
   color: black;
   margin: 0;
+  text-align: center;
 }
 
 body {
