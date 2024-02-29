@@ -5,15 +5,50 @@
   font-family: 'Roboto';
 }
 
-body {
+body, .page, .form-inputs, .reviews, .img-and-contact, .image {
   display: flex;
   flex-direction: column;
+}
+
+main, .buttons, .content, .email-label, form {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Order these based on their HTML order */
+.buttons {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.email-label {
+  justify-content: center;
+}
+
+.form-inputs {
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  justify-content: center;
+}
+
+.img-and-contact {
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  align-items: center;
+}
+
+body {
   font-weight: 300;
 }
 
 main {
-  display: flex;
-  flex-direction: row;
   margin: 10px;
 }
 @media screen and (max-width: 1520px) {
@@ -82,14 +117,6 @@ footer p {
   box-shadow: none;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 1140px) {
   h1 {
     font-size: 48px;
@@ -128,15 +155,8 @@ p {
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
   background-color: #2F3C7E;
   color: white;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
 }
 
 .contact {
@@ -146,25 +166,6 @@ p {
 
 .reviews {
   width: 100%;
-}
-
-.email-label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.form-inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 @media screen and (max-width: 640px) {
@@ -181,18 +182,6 @@ form {
   }
 }
 
-.reviews {
-  display: flex;
-  flex-direction: column;
-}
-
-.img-and-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1, form, .headline {
   background-color: #9BB6E9;
   color: black;
@@ -202,12 +191,6 @@ h1, form, .headline {
 
 body {
   background-color: #e3edff;
-}
-
-.image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .image p {
