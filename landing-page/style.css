@@ -15,11 +15,9 @@ main, .buttons, .content, .email-label, form {
   flex-direction: row;
 }
 
-/* Order these based on their HTML order */
-.buttons {
+/* Ordered based on their HTML order */
+form {
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .email-label {
@@ -31,8 +29,10 @@ main, .buttons, .content, .email-label, form {
   align-items: center;
 }
 
-form {
+.buttons {
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .img-and-contact {
