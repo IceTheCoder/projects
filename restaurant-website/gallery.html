@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
@@ -17,7 +18,28 @@
     </nav>
   </header>
   <main>
-    
+    <div class="carousel">
+      <button id="prev">Prev</button>
+      <img id="img1" src="image1.jpg">
+      <img id="img2" class="active" src="image2.jpg">
+      <img id="img3" src="image3.jpg">
+      <button id="next">Next</button>
+    </div>
+
+    <script>
+      var images = Array.from(document.querySelectorAll('.carousel img'));
+      var currentIndex = images.findIndex(img => img.classList.contains('active'));
+      document.getElementById('prev').addEventListener('click', function() {
+          images[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          images[currentIndex].classList.add('active');
+      });
+      document.getElementById('next').addEventListener('click', function() {
+          images[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add('active');
+      });
+    </script>
   </main>
   <footer>
     Made by IceTheCoder

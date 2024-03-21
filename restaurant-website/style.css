@@ -7,3 +7,18 @@
 body {
   color: red;
 }
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 10px;
+  filter: grayscale(100%) blur(2px);
+}
+.carousel img.active {
+  filter: none;
+}
