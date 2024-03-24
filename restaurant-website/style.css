@@ -22,15 +22,6 @@ nav a {
   color: black;
 }
 
-/* Flex and margins */
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 20px;
-  margin-top: 50px;
-}
-
 form {
   display: flex;
   flex-direction: column;
