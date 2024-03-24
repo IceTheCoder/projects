@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
   font-size: 50px;
@@ -20,7 +34,6 @@ nav a {
   text-decoration: none;
   color: black;
 }
-
 
 /* Carousel */
 .carousel {
