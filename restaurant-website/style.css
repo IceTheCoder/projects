@@ -15,21 +15,41 @@ body {
 }
 main {
   margin-top: -15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.about-main, .contact-main {
-  margin-top: -30vh;
+.gallery-main, .about-main {
+  display: flex;
+  flex-direction: column;
 }
-button, .submit {
-  margin-top: 30px;
+.about-main {
+  align-items: stretch;
+}
+.gallery-main {
+  margin-top: 5vh;
+}
+/* Table cell spacing */
+td {
+  padding: 5px 10px;
 }
 .menu-category {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-td {
-  padding-left: 50px;
-  padding-right: 50px;
+
+.buttons {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttons button {
+  margin: 20px;
+  width: 300px;
+  height: 100px;
 }
 
 /* Font Sizes */
@@ -133,6 +153,25 @@ button {
   height: 100px;
   margin: auto;
   margin-top: 30px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel img {
+  width: 150px;
+  height: 200px;
+  margin: 0 10px;
+  filter: blur(2px);
+  object-fit: cover;
+}
+.carousel img.active {
+  filter: none;
+  width: 300px;
+  height: 400px;
 }
 
 /* Footer */
