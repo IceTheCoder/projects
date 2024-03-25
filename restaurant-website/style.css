@@ -19,20 +19,47 @@ main {
 .about-main, .contact-main {
   margin-top: -30vh;
 }
+button, .submit {
+  margin-top: 30px;
+}
+.menu-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+td {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Font Sizes */
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+button, .submit {
+  font-size: 30px;
+}
+label, select, input {
+  font-size: 25px;
+}
+nav {
+  font-size: 25px;
+}
+p, tr, td {
+  font-size: 20px;
+}
 
 
 /* Header */
 h1 {
   text-align: center;
-  font-size: 50px;
   padding: 10px;
-}
-h2 {
-  font-size: 30px;
 }
 nav {
   text-align: center;
-  font-size: 25px;
   margin-bottom: 50px;
 }
 nav a {
