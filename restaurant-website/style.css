@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+/* Positioning */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  margin-top: -15vh;
+}
+.about-main, .contact-main {
+  margin-top: -30vh;
+}
+
+
 /* Header */
 h1 {
   text-align: center;
