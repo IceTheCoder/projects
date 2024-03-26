@@ -99,10 +99,6 @@ p, tr, td {
 h1, nav a {
   color: black;
 }
-fieldset {
-  background-color: black;
-  color: white;
-}
 .nav-list li a {
   color: black;
 }
@@ -173,6 +169,42 @@ fieldset {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.book-form {
+  max-width: 750px;
+  margin: 20px;
+  padding: 35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.book-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.book-form label,
+.book-form select,
+.book-form input[type=datetime-local],
+.book-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.book-form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+.book-form select,
+.book-form input[type=datetime-local] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#book {
+  width: 250px;
+  height: 100px;
+}
 
 /* Margins */
 p, h2 {
@@ -209,10 +241,6 @@ button:active {
   top: 10px;
   box-shadow: none;
   left: 10px;
-}
-#book {
-  width: 350px;
-  height: 125px;
 }
 .submit {
   width: 400px;
