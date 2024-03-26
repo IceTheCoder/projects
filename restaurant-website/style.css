@@ -34,10 +34,17 @@ main {
 td {
   padding: 5px 10px;
 }
+/**/
 .menu-category {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.nav-list li {
+  display: inline; /* Ensures the list items are displayed inline */
+}
+.nav-list a {
+  padding: 0 10px; /* Adjust padding as needed */
 }
 
 /* Button styles */
@@ -76,7 +83,7 @@ h2 {
   font-size: 40px;
 }
 button, .submit {
-  font-size: 30px;
+  font-size: 35px;
 }
 label, select, input {
   font-size: 25px;
@@ -90,14 +97,23 @@ p, tr, td {
 
 /* Colours */
 h1, nav a {
-  color: white;
+  color: black;
 }
 fieldset {
   background-color: black;
   color: white;
 }
+.nav-list li a {
+  color: black;
+}
+footer p {
+  color: white;
+}
 
 /* Header */
+header {
+  background-color: #b9e1ff;
+}
 h1 {
   text-align: center;
   padding: 10px;
@@ -109,7 +125,6 @@ nav {
 nav a {
   padding: 50px;
   text-decoration: none;
-  color: black;
 }
 .nav-list {
   display: flex;
@@ -118,9 +133,6 @@ nav a {
   margin-left: 35%;
   margin-right: 35%;
   list-style-type: none;
-}
-.nav-list li a {
-  color: white;
 }
 
 /* Form */
@@ -178,6 +190,22 @@ section {
 button {
   width: 400px;
   height: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: #80c8ff;
+  color: white;
+  box-shadow: 10px 10px 10px black;	
+}
+button:hover {
+  background-color: #5399ce;
+  cursor: pointer;
+}
+button:active {
+  background-color: #2e6996;
+  position: relative;
+  top: 10px;
+  box-shadow: none;
+  left: 10px;
 }
 #book {
   width: 350px;
