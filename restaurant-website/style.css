@@ -92,6 +92,10 @@ p, tr, td {
 h1, nav a {
   color: white;
 }
+fieldset {
+  background-color: black;
+  color: white;
+}
 
 /* Header */
 h1 {
@@ -172,12 +176,12 @@ section {
 
 /* Buttons */
 button {
-  width: 350px;
-  height: 125px;
+  width: 400px;
+  height: 150px;
 }
 #book {
-  width: 300px;
-  height: 100px;
+  width: 350px;
+  height: 125px;
 }
 .submit {
   width: 400px;
