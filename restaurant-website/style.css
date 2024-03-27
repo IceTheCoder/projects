@@ -205,6 +205,9 @@ fieldset {
   width: 250px;
   height: 100px;
 }
+label {
+  text-align: center;
+}
 
 /* Margins */
 p, h2 {
@@ -229,7 +232,7 @@ button {
   border: none;
   background-color: #80c8ff;
   color: white;
-  box-shadow: 10px 10px 10px black;	
+  box-shadow: 0px 10px 10px black;	
 }
 button:hover {
   background-color: #5399ce;
@@ -240,7 +243,6 @@ button:active {
   position: relative;
   top: 10px;
   box-shadow: none;
-  left: 10px;
 }
 .submit {
   width: 400px;
