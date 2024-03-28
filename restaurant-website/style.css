@@ -262,8 +262,8 @@ img {
   object-fit: cover;
 }
 .menu-image {
-  width: 325px;
-  height: 375px;
+  width: 250px;
+  height: 275px;
 }
 
 /* Carousel */
@@ -294,6 +294,24 @@ section {
   flex-direction: column;
   align-items: center;
 }
+.menu-body {
+  margin: auto;
+   width: 100%;
+}
+.menu-main {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-main h2 {
+  font-size: 30px;
+}
+.menu-main td {
+  font-size: 20px;
+}
+
 
 /* Footer */
 footer {
