@@ -14,7 +14,6 @@ body {
   justify-content: space-between;
 }
 main {
-  margin-top: -15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -85,22 +84,42 @@ main {
 
 /* Font Sizes */
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 h2 {
+  font-size: 50px;
+}  
+button, .submit {
   font-size: 40px;
 }
-button, .submit {
+label, select, input {
   font-size: 35px;
 }
-label, select, input {
-  font-size: 25px;
-}
 nav {
-  font-size: 25px;
+  font-size: 35px;
 }
 p, tr, td {
-  font-size: 20px;
+  font-size: 25px;
+} 
+@media screen and (max-width: 2500px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }  
+  button, .submit {
+    font-size: 35px;
+  }
+  label, select, input {
+    font-size: 25px;
+  }
+  nav {
+    font-size: 25px;
+  }
+  p, tr, td {
+    font-size: 20px;
+  }  
 }
 
 /* Colours & Decoration */
@@ -127,6 +146,7 @@ iframe {
 /* Header */
 header {
   background-color: #b9e1ff;
+  width: 100%;
 }
 h1 {
   text-align: center;
@@ -276,10 +296,6 @@ button:active {
 img {
   object-fit: cover;
 }
-.menu-image {
-  width: 10vw;
-  height: 20vh;
-}
 
 /* Carousel */
 .carousel {
@@ -325,13 +341,33 @@ figcaption {
   font-size: 1.75vh;
 }
 
-.menu-main {
-  max-width: 1280px;
+.menu-body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
+
+.menu-main {
+  max-width: 1536px;
+}
+figcaption {
+  max-width: 10vw;
+  margin: 0 2vw;
+  text-align: center;
+}
+
+.menu-category {
+  width: 80%; /* Adjust width as needed */
+  margin-bottom: 50px; /* Adjust margin as needed */
+}
+
+.menu-image {
+  display: block;
+  margin: 0 auto;
+  width: 10vw;
+  height: 20vh;
+}
+
 
 /* Footer */
 footer {
