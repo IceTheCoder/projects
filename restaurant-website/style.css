@@ -31,9 +31,17 @@ main {
   margin-top: 5vh;
 }
 /* Table cell spacing */
-td {
-  padding: 5px 10px;
+@media screen and (min-height: 1440px) {
+  td {
+    padding: 5px 10px;
+  }
 }
+@media screen and (max-height: 1439px) {
+  td {
+    padding: 0px 5px;
+  }
+}
+
 /**/
 .menu-category {
   display: flex;
@@ -217,24 +225,31 @@ label {
 }
 
 /* Margins */
-p, h2 {
-  margin-left: 20px;
-  margin-right: 20px;
+@media screen and (min-width: 2560px) {
+  p, h2 {
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+  }
+  p {
+    margin-bottom: 0.4vh;
+  }
+  h2 {
+    margin-bottom: 0.7vh;
+  }
+  section {
+    margin-bottom: 1.4vh;
+  }  
 }
-p {
-  margin-bottom: 5px;
-}
-h2 {
-  margin-bottom: 10px;
-}
-section {
-  margin-bottom: 20px;
+@media screen and (max-width: 2559px) {
+  p, h2, section {
+    margin: 0px;
+  }
 }
 
 /* Buttons */
 button {
-  width: 400px;
-  height: 150px;
+  width: 20vw;
+  height: 15vh;
   border-radius: 5px;
   border: none;
   background-color: #80c8ff;
@@ -252,8 +267,8 @@ button:active {
   box-shadow: none;
 }
 .submit {
-  width: 400px;
-  height: 100px;
+  width: 25vw;
+  height: 20vh;
   margin: auto;
   margin-top: 30px;
 }
@@ -262,8 +277,8 @@ img {
   object-fit: cover;
 }
 .menu-image {
-  width: 250px;
-  height: 275px;
+  width: 10vw;
+  height: 20vh;
 }
 
 /* Carousel */
@@ -298,6 +313,18 @@ section {
   margin: auto;
    width: 100%;
 }
+
+/* Menu text sizes */
+.menu-main h2 {
+  font-size: 3vh;
+}
+.menu-main td {
+  font-size: 2vh;
+}
+figcaption {
+  font-size: 1.75vh;
+}
+
 .menu-main {
   max-width: 1280px;
   display: flex;
@@ -305,16 +332,9 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.menu-main h2 {
-  font-size: 30px;
-}
-.menu-main td {
-  font-size: 20px;
-}
-
 
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 1vh;
 }
