@@ -187,7 +187,7 @@ fieldset {
 .book-form {
   max-width: 750px;
   margin: 20px;
-  padding: 35px;
+  padding: 50px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -215,10 +215,6 @@ fieldset {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
-}
-#book {
-  width: 250px;
-  height: 100px;
 }
 label {
   text-align: center;
@@ -248,13 +244,17 @@ label {
 
 /* Buttons */
 button {
-  width: 20vw;
-  height: 15vh;
+  width: 17vw;
+  height: 13vh;
   border-radius: 5px;
   border: none;
   background-color: #80c8ff;
   color: white;
   box-shadow: 0px 10px 10px black;	
+}
+#book {
+  width: 12vw;
+  height: 9vh;
 }
 button:hover {
   background-color: #5399ce;
@@ -311,7 +311,7 @@ section {
 }
 .menu-body {
   margin: auto;
-   width: 100%;
+  width: 100%;
 }
 
 /* Menu text sizes */
