@@ -63,8 +63,8 @@ main {
 }
 .buttons button {
   margin: 20px;
-  width: 300px;
-  height: 100px;
+  width: 15vw;
+  height: 10vh;
 }
 
 /* Background images */ 
@@ -318,16 +318,38 @@ img {
   align-items: center;
 }
 .carousel img {
-  width: 150px;
-  height: 200px;
   margin: 0 10px;
   filter: blur(2px);
   object-fit: cover;
 }
 .carousel img.active {
   filter: none;
-  width: 300px;
-  height: 400px;
+}
+.carousel img {
+  width: 100px;
+  height: 133px;
+  margin: 0 10px;
+  filter: blur(2px);
+  object-fit: cover;
+}
+.carousel img.active {
+  filter: none;
+  width: 200px;
+  height: 267px;
+}
+@media screen and (min-width: 2500px) {
+  .carousel img {
+    width: 150px;
+    height: 200px;
+    margin: 0 10px;
+    filter: blur(2px);
+    object-fit: cover;
+  }
+  .carousel img.active {
+    filter: none;
+    width: 300px;
+    height: 400px;
+  }
 }
 
 /* Widths */
