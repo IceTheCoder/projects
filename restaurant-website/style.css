@@ -183,6 +183,7 @@ nav a {
 .inputs {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .inputs div {
   margin: 10px;
@@ -263,7 +264,7 @@ label {
 }
 
 /* Buttons */
-button {
+button, .submit {
   width: 17vw;
   height: 13vh;
   border-radius: 5px;
@@ -276,21 +277,25 @@ button {
   width: 12vw;
   height: 9vh;
 }
-button:hover {
+button:hover, .submit:hover {
   background-color: #5399ce;
   cursor: pointer;
 }
-button:active {
+button:active, .submit:active {
   background-color: #2e6996;
   position: relative;
   top: 10px;
   box-shadow: none;
 }
 .submit {
-  width: 25vw;
-  height: 20vh;
   margin: auto;
   margin-top: 30px;
+}
+input, textarea {
+  background-color: #a4d8ff;
+}
+input:hover, textarea:hover {
+  background-color: #80c8ff;
 }
 
 img {
