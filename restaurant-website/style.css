@@ -136,7 +136,7 @@ a {
   text-decoration: none;
 }
 body:not(.header-body) {
-  background-color: rgb(75, 75, 75);
+  background-color: #121212;
   color: white;
 }
 iframe {
@@ -267,7 +267,7 @@ label {
 button, .submit {
   width: 17vw;
   height: 13vh;
-  border-radius: 5px;
+  border-radius: 16px;
   border: none;
   background-color: #80c8ff;
   color: white;
