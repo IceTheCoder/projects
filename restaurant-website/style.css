@@ -255,6 +255,8 @@ button {
 #book {
   width: 12vw;
   height: 9vh;
+  min-width: 250px;
+  min-height: 80px;
 }
 button:hover {
   background-color: #5399ce;
