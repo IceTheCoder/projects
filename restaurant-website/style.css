@@ -303,6 +303,12 @@ input:hover, textarea:hover {
 img {
   object-fit: cover;
 }
+.menu-image {
+  display: block;
+  margin: 0 auto;
+  width: 10vw;
+  height: 20vh;
+}
 
 /* Carousel */
 .carousel {
@@ -366,13 +372,6 @@ figcaption {
 .menu-category {
   width: 80%; /* Adjust width as needed */
   margin-bottom: 50px; /* Adjust margin as needed */
-}
-
-.menu-image {
-  display: block;
-  margin: 0 auto;
-  width: 10vw;
-  height: 20vh;
 }
 
 
