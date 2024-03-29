@@ -302,6 +302,7 @@ input:hover, textarea:hover {
 
 img {
   object-fit: cover;
+  background-size: cover;
 }
 .menu-image {
   display: block;
