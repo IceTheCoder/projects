@@ -258,7 +258,11 @@ header {
   background-color: #fff;
 }
 label {
-  text-align: center;
+  text-align: left;
+}
+textarea {
+  width: 500px;
+  resize: none;
 }
 #book {
   width: 12vw;
