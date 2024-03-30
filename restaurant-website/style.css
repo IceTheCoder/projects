@@ -267,7 +267,7 @@ label {
 button, .submit {
   width: 17vw;
   height: 13vh;
-  border-radius: 16px;
+  border-radius: 30px;
   border: none;
   background-color: #80c8ff;
   color: white;
