@@ -18,17 +18,12 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 .gallery-main, .about-main {
   display: flex;
   flex-direction: column;
-}
-@media screen and (max-width: 960px) {
-  .gallery-main {
-    flex-direction: column-reverse;
-  }
 }
 .about-main {
   align-items: stretch;
@@ -49,7 +44,6 @@ main {
   }
 }
 
-/**/
 .menu-category {
   display: flex;
   flex-direction: column;
@@ -166,6 +160,10 @@ header {
   background-color: #b9e1ff;
   width: 100%;
 }
+iframe {
+  width: 100%;
+  height: 100%;
+}
 h1 {
   text-align: center;
   padding: 10px;
@@ -183,6 +181,11 @@ nav a {
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
+}
+@media screen and (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+  }
 }
 
 /* Form */
@@ -231,11 +234,6 @@ fieldset {
   border-radius: 5px;
   background-color: #f9f9f9;
 }
-.book-form fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 .book-form label,
 .book-form select,
 .book-form input[type=datetime-local],
@@ -243,6 +241,12 @@ fieldset {
   display: block;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.book-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .book-form label {
   margin-bottom: 5px;
@@ -258,6 +262,35 @@ fieldset {
 label {
   text-align: center;
 }
+#book {
+  width: 12vw;
+  height: 9vh;
+  min-width: 250px;
+  min-height: 80px;
+}
+@media screen and (max-width: 480px) {
+  .book-form {
+    width: 60vw;
+  }
+  .book-form label,
+  .book-form select,
+  .book-form input[type=datetime-local],
+  .book-form button {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #book {
+    min-width: 0px;
+    min-height: 0px;
+    width: 30vw;
+  }
+  input, textarea {
+    max-width: 80vw;
+  }
+}
+
 
 /* Margins */
 @media screen and (min-width: 2560px) {
@@ -291,12 +324,6 @@ button, .submit {
   background-color: #80c8ff;
   color: white;
   box-shadow: 0px 10px 10px black;	
-}
-#book {
-  width: 12vw;
-  height: 9vh;
-  min-width: 250px;
-  min-height: 80px;
 }
 button:hover, .submit:hover {
   background-color: #5399ce;
@@ -338,6 +365,7 @@ img {
   .menu-image {
     width: 30vw;
     height: 40vh;
+    min-width: 250px;
   }
 }
 
@@ -422,6 +450,9 @@ figcaption {
 .menu-main {
   max-width: 1536px;
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 figcaption {
   max-width: 10vw;
@@ -435,8 +466,10 @@ figcaption {
 }
 
 .menu-category {
-  width: 80%; /* Adjust width as needed */
+  width: 25%; /* Adjust width as needed */
+  min-width: 270px;
   margin-bottom: 1vh; /* Adjust margin as needed */
+  margin-top: 1vh;
 }
 
 
