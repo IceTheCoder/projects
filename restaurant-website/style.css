@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Fonts */
+h1 {
+  font-weight: 400;
 }
 
 /* Positioning */
@@ -95,8 +101,8 @@ h1 {
 h2 {
   font-size: 50px;
 }  
-button, .submit {
-  font-size: 40px;
+button, .submit, a button {
+  font-size: 50px;
 }
 label, select, input {
   font-size: 35px;
