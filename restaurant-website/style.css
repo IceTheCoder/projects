@@ -272,7 +272,7 @@ label {
 button, .submit {
   width: 17vw;
   height: 13vh;
-  border-radius: 30px;
+  border-radius: 2vw;
   border: none;
   background-color: #80c8ff;
   color: white;
