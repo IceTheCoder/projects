@@ -181,11 +181,10 @@ nav a {
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
-  .nav-list {
-    flex-direction: column;
-  }
+  
 }
 
 /* Form */
