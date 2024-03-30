@@ -25,6 +25,7 @@ main {
 }
 .about-main {
   align-items: stretch;
+  padding: 30px;
 }
 .gallery-main {
   margin-top: 5vh;
@@ -375,6 +376,7 @@ figcaption {
 
 .menu-main {
   max-width: 1536px;
+  padding: 10px;
 }
 figcaption {
   max-width: 10vw;
@@ -384,7 +386,7 @@ figcaption {
 
 .menu-category {
   width: 80%; /* Adjust width as needed */
-  margin-bottom: 50px; /* Adjust margin as needed */
+  margin-bottom: 1vh; /* Adjust margin as needed */
 }
 
 
