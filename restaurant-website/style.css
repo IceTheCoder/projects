@@ -436,6 +436,15 @@ section {
 .menu-main td {
   font-size: 2vh;
 }
+@media screen and (max-height: 1000px) {
+  .menu-main h2 {
+    font-size: 30px;
+  }
+  .menu-main td {
+    font-size: 20px;
+  }
+  
+}
 figcaption {
   font-size: 1.75vh;
 }
