@@ -5,12 +5,16 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Fonts */
+/* Headings */
 h1 {
   font-weight: 400;
 }
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* Positioning */
+/* Positioning & Sizes (Flex, width, height, padding, margins) */
 html, body {
   height: 100%;
 }
@@ -26,7 +30,6 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .gallery-main, .about-main {
   display: flex;
   flex-direction: column;
@@ -38,18 +41,6 @@ main {
 .gallery-main {
   margin-top: 5vh;
 }
-/* Table cell spacing */
-@media screen and (min-height: 1440px) {
-  td {
-    padding: 5px 10px;
-  }
-}
-@media screen and (max-height: 1439px) {
-  td {
-    padding: 0px 5px;
-  }
-}
-
 .menu-category {
   display: flex;
   flex-direction: column;
@@ -61,12 +52,6 @@ main {
 .nav-list a {
   padding: 0 10px; /* Adjust padding as needed */
 }
-h1 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Button styles */
 .buttons {
   margin: 20px;
   display: flex;
@@ -77,6 +62,103 @@ h1 a {
   margin: 20px;
   width: 15vw;
   height: 10vh;
+}
+.header-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  border: none;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  text-align: center;
+  margin-bottom: 50px;
+}
+nav a {
+  padding: 50px;
+  text-decoration: none;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs div {
+  margin: 10px;
+}
+.name-and-email {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+fieldset {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.book-form {
+  max-width: 750px;
+  margin: 20px;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.book-form label,
+.book-form select,
+.book-form input[type=datetime-local],
+.book-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Table cell spacing */
+@media screen and (min-height: 1440px) {
+  td {
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-height: 1439px) {
+  td {
+    padding: 0px 5px;
+  }
 }
 
 /* Background images */ 
@@ -151,103 +233,14 @@ body:not(.header-body) {
   background-color: #121212;
   color: white;
 }
-.header-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-iframe {
-  border: none;
-}
 
 /* Header */
 header {
   background-color: #b9e1ff;
   width: 100%;
 }
-iframe {
-  width: 100%;
-  height: 100%;
-}
-h1 {
-  text-align: center;
-  padding: 10px;
-}
-nav {
-  text-align: center;
-  margin-bottom: 50px;
-}
-nav a {
-  padding: 50px;
-  text-decoration: none;
-}
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-@media screen and (max-width: 480px) {
-  
-}
 
 /* Form */
-.book-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.message-form {
-  display: flex;
-  flex-direction: column;
-}
-.inputs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.inputs div {
-  margin: 10px;
-}
-.name-and-email {
-  display: flex;
-  flex-direction: column;
-}
-.message {
-  display: flex;
-  flex-direction: column;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-fieldset {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.book-form {
-  max-width: 750px;
-  margin: 20px;
-  padding: 50px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-.book-form label,
-.book-form select,
-.book-form input[type=datetime-local],
-.book-form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
 .book-form fieldset {
   border: none;
   margin: 0;
@@ -295,7 +288,6 @@ label {
     max-width: 80vw;
   }
 }
-
 
 /* Margins */
 @media screen and (min-width: 2560px) {
