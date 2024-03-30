@@ -347,9 +347,10 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 20px;
 }
 .carousel img {
-  margin: 0 10px;
+  margin: 5px 10px;
   filter: blur(2px);
   object-fit: cover;
 }
@@ -361,16 +362,29 @@ img {
   height: 28vh;
   min-width: 175px;
   min-height: 350px;
-  margin: 0 10px;
+  margin: 5px 10px;
   filter: blur(2px);
   object-fit: cover;
 }
-.carousel img.active {
-  filter: none;
-  width: 16vw;
-  height: 37vh;
-  min-width: 200px;
-  min-height: 400px;
+@media screen and (min-width: 961px) {
+  .carousel img.active {
+    filter: none;
+    width: 16vw;
+    height: 37vh;
+    min-width: 200px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .carousel img, .carousel img.active{
+    filter: none;
+    width: 12vw;
+    height: 28vh;
+  }
+  #prev, #next {
+    display: none;
+  }
 }
 
 /* Widths */
