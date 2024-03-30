@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="index-body">
+  <header>
+    <iframe src="header.html"></iframe>
+  </header>
+  <main>
+    <a href="menu.html"><button id="menu-button" aria-label="Menu">Menu</button></a>
+    <form class="book-form">
+      <fieldset>
+        <label for="no-people">
+          Number of people
+        </label>
+        <select id="no-people" aria-label="Number of people">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <input type="datetime-local" id="time" aria-label="Date and time">
+      </fieldset>
+      <button type="submit" id="book" aria-label="Book">Book</button>
+    </form>
+    <a href="contact.html"><button id="contact-button" aria-label="Contact">Contact</button></a>
+  </main>
+  <footer>
+    <p>Made by IceTheCoder</p>
+    <p>
+      Photo by 
+      <a href="https://unsplash.com/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        Jason Leung
+      </a> on 
+      <a href="https://unsplash.com/photos/photo-of-pub-set-in-room-during-daytime-poI7DelFiVA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+        Unsplash
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
