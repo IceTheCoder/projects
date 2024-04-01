@@ -4,3 +4,18 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* Flex display */
+main, .event-container {
+  display: flex;
+  flex-direction: row;
+}
+.information {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Widths */
+.description {
+  min-width: 500px;
+}
