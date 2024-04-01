@@ -6,6 +6,11 @@
 }
 
 /* Flex display */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .event-container {
   display: flex;
   flex-direction: row;
@@ -32,6 +37,9 @@
   min-width: 750px;
   min-height: 375px;
 }
+.story {
+  max-width: 60%;
+}
 
 /* Margins */
 .date, .location {
@@ -39,6 +47,9 @@
 }
 body {
   margin: 20px;
+}
+p {
+  margin: 10px;
 }
 
 /* Font sizes */
@@ -50,11 +61,14 @@ h2 {
   font-size: 40px;
 }
 .spacetime {
-  font-size: 24px;
+  font-size: 36px;
 }
 .tickets-from, button {
-  font-size: 20px;
+  font-size: 30px;
 }
 .price {
-  font-size: 48px;
+  font-size: 72px;
+}
+p {
+  font-size: 1.25vw;
 }
