@@ -6,16 +6,55 @@
 }
 
 /* Flex display */
-main, .event-container {
+.event-container {
   display: flex;
   flex-direction: row;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .information {
   display: flex;
   flex-direction: row;
 }
+.ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Widths */
-.description {
-  min-width: 500px;
+.description, .ticket {
+  min-width: 750px;
+  min-height: 375px;
+}
+
+/* Margins */
+.date, .location {
+  margin: 10px;
+}
+body {
+  margin: 20px;
+}
+
+/* Font sizes */
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+}
+.spacetime {
+  font-size: 24px;
+}
+.tickets-from, button {
+  font-size: 20px;
+}
+.price {
+  font-size: 48px;
 }
