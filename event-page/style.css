@@ -18,6 +18,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1279px) {
+  .event-container {
+    flex-direction: column;
+  }
+}
 .description {
   display: flex;
   flex-direction: column;
@@ -28,12 +33,22 @@ main {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 1279px) {
+  .description, .information {
+    flex-direction: column;
+  }
+}
 .ticket {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 30%;
+}
+@media screen and (max-width: 1279px) {
+  .ticket {
+    padding-left: 0;
+  }
 }
 
 /* Widths */
@@ -58,9 +73,13 @@ main {
     min-height: 375px;
   }
 }
-
 .story {
   max-width: 60%;
+}
+@media screen and (max-width: 1279px) {
+  .story {
+    max-width: 100%;
+  }
 }
 
 /* Margins */
@@ -75,30 +94,55 @@ p {
 }
 
 /* Font sizes */
-h1 {
-  font-size: 4.7vh; /* 50px on 1080p */
+h1, footer {
   text-align: center;
 }
-h2 {
-  font-size: 3.7vh; /* 40px on 1080p */
+@media screen and (orientation: landscape) {
+  h1 {
+    font-size: 4.7vh; /* 50px on 1080p */
+  }
+  h2 {
+    font-size: 3.7vh; /* 40px on 1080p */
+  }
+  .spacetime {
+    font-size: 3.3vh; /* 36px on 1080p */
+  }
+  .tickets-from, button {
+    font-size: 2.8vh; /* 30px on 1080p */
+  }
+  .price {
+    font-size: 6.7vh; /* 72px on 1080p */
+  }
+  p {
+    font-size: 2.2vh; /* 24px on 1080p */
+  }
+  footer {
+    font-size: 1.7vh; /* 18px on 1080p */
+  }  
 }
-.spacetime {
-  font-size: 3.3vh; /* 36px on 1080p */
-}
-.tickets-from, button {
-  font-size: 2.8vh; /* 30px on 1080p */
-}
-.price {
-  font-size: 6.7vh; /* 72px on 1080p */
-}
-p {
-  font-size: 2.2vh; /* 24px on 1080p */
-}
-footer {
-  font-size: 1.7vh; /* 18px on 1080p */
-}
-
-/* Text align */
-footer {
-  text-align: center;
+@media screen and (orientation: portrait) {
+  h1 {
+    font-size: 9.4vw;
+  }
+  h2 {
+    font-size: 5.6vw;
+  }
+  .spacetime {
+    font-size: 5.1vw;
+  }
+  .tickets-from, button {
+    font-size: 5.6vw;
+  }
+  .price {
+    font-size: 13.4vw;
+  }
+  p {
+    font-size: 4.4vw;
+  }
+  footer {
+    font-size: 3.4vw;
+  }
+  span {
+    text-align: center;
+  }
 }
