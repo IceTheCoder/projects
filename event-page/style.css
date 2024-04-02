@@ -37,10 +37,28 @@ main {
 }
 
 /* Widths */
-.description, .ticket {
-  min-width: 750px;
-  min-height: 375px;
+@media screen and (max-width: 1919px) {
+  .description, .ticket {
+    min-width: 500px;
+  }
+
 }
+@media screen and (min-width: 1920px) {
+  .description, .ticket {
+    min-width: 750px;
+  }
+}
+@media screen and (max-height: 1079px) {
+  .description, .ticket {
+    min-height: 250px;
+  }
+}
+@media screen and (min-height: 1080px) {
+  .description, .ticket {
+    min-height: 375px;
+  }
+}
+
 .story {
   max-width: 60%;
 }
@@ -75,4 +93,12 @@ h2 {
 }
 p {
   font-size: 2.2vh; /* 24px on 1080p */
+}
+footer {
+  font-size: 1.7vh; /* 18px on 1080p */
+}
+
+/* Text align */
+footer {
+  text-align: center;
 }
