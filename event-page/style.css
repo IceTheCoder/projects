@@ -14,6 +14,7 @@ main {
 .event-container {
   display: flex;
   flex-direction: row;
+  min-height: 75vh;
 }
 .description {
   display: flex;
@@ -54,21 +55,21 @@ p {
 
 /* Font sizes */
 h1 {
-  font-size: 50px;
+  font-size: 4.7vh; /* 50px on 1080p */
   text-align: center;
 }
 h2 {
-  font-size: 40px;
+  font-size: 3.7vh; /* 40px on 1080p */
 }
 .spacetime {
-  font-size: 36px;
+  font-size: 3.3vh; /* 36px on 1080p */
 }
 .tickets-from, button {
-  font-size: 30px;
+  font-size: 2.8vh; /* 30px on 1080p */
 }
 .price {
-  font-size: 72px;
+  font-size: 6.7vh; /* 72px on 1080p */
 }
 p {
-  font-size: 1.25vw;
+  font-size: 2.2vh; /* 24px on 1080p */
 }
