@@ -17,6 +17,7 @@ main {
   min-height: 75vh;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 @media screen and (max-width: 1279px) {
   .event-container {
@@ -52,11 +53,15 @@ main {
 }
 
 /* Widths */
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 500px) {
+  .description, .ticket {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1919px) {
   .description, .ticket {
     min-width: 500px;
   }
-
 }
 @media screen and (min-width: 1920px) {
   .description, .ticket {
