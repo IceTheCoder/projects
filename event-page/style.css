@@ -94,7 +94,7 @@ p {
 }
 
 /* Font sizes */
-h1, footer {
+h1, h2, footer {
   text-align: center;
 }
 @media screen and (orientation: landscape) {
@@ -144,5 +144,12 @@ h1, footer {
   }
   span {
     text-align: center;
+  }
+}
+
+/* <br> */
+@media screen and (min-width: 1280px) {
+  br {
+    display: none;
   }
 }
