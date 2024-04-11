@@ -142,7 +142,7 @@ h1, h2, footer {
   p {
     font-size: 2.5vh; /* 24px on 1080p */
   }
-  footer {
+  footer p {
     font-size: 1.7vh; /* 18px on 1080p */
   }  
 }
@@ -162,7 +162,7 @@ h1, h2, footer {
   p {
     font-size: 20px; /* 24px on 1080p */
   }
-  footer {
+  footer p {
     font-size: 13px; /* 18px on 1080p */
   }  
 }
@@ -182,7 +182,7 @@ h1, h2, footer {
   p {
     font-size: 4.4vw;
   }
-  footer {
+  footer p {
     font-size: 3.4vw;
   }
   span {
