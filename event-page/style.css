@@ -214,7 +214,7 @@ button {
   background-color: #2F3C7E;
   color: white;
   border-radius: 10px;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 }
 
 button:hover {
