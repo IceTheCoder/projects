@@ -194,6 +194,7 @@ h1, h2, footer {
 .icon {
   width: 5vh;
   height: 5vh;
+  animation-fill-mode: forwards;
 }
 .spacetime {
   height: 3.6vh;
