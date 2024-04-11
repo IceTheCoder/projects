@@ -28,7 +28,7 @@ main {
   display: flex;
   flex-direction: row;
 }
-.date {
+.date, .location {
   display: flex;
   justify-content: center;
   align-items: center;
