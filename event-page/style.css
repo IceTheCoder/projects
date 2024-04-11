@@ -26,6 +26,11 @@ main {
   display: flex;
   flex-direction: row;
 }
+.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .ticket {
   display: flex;
   flex-direction: column;
@@ -184,6 +189,12 @@ h1, h2, footer {
   span {
     text-align: center;
   }
+}
+
+/* Icons */
+.icon {
+  width: 5vh;
+  height: 5vh;
 }
 
 /* <br> */
