@@ -206,3 +206,25 @@ h1, h2, footer {
     display: none;
   }
 }
+
+/* Button styles */
+button {
+  padding: 20px;
+  border: none;
+  background-color: #2F3C7E;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #3e4d96;
+  /* From https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 18px 24px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #7a88ce;
+}
