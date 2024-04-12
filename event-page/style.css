@@ -38,7 +38,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 20vw;
+  height: 10vh;
 }
 @media screen and (min-height: 625px) {
   .event-container {
@@ -80,7 +80,7 @@ main {
 }
 @media screen and (min-width: 1920px) {
   .description, .ticket {
-    min-width: 750px;
+    min-width: 300px;
   }
 }
 @media screen and (max-height: 574px) {
@@ -95,7 +95,7 @@ main {
 }
 @media screen and (min-height: 1080px) {
   .description, .ticket {
-    min-height: 375px;
+    min-height: 500px;
   }
 }
 .story {
@@ -227,4 +227,17 @@ button:hover {
 button:active {
   box-shadow: 0 18px 24px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   background-color: #7a88ce;
+}
+
+/* Div styles */
+.ticket {
+  background-color: #8AAAE5;
+  border-radius: 10px;
+}
+.tickets-from, .price {
+  color: white;
+}
+
+.event-container {
+  background-image: url();
 }
