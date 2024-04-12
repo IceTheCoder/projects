@@ -201,11 +201,18 @@ h1, h2, footer {
 .icon {
   width: 5vh;
   height: 5vh;
+  min-width: 30px;
+  min-height: 30px;
   animation-fill-mode: forwards;
   filter: invert(1);
 }
 .spacetime {
   height: 3.6vh;
+}
+@media screen and (max-height: 625px) {
+  .spacetime {
+    height: 7vh;
+  }
 }
 
 /* <br> */
