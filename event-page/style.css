@@ -27,6 +27,7 @@ main {
 .information {
   display: flex;
   flex-direction: row;
+  margin: 20px;
 }
 .date, .location {
   display: flex;
@@ -39,6 +40,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 10vh;
+  margin: 20px;
 }
 @media screen and (min-height: 625px) {
   .event-container {
@@ -195,6 +197,7 @@ h1, h2, footer {
   width: 5vh;
   height: 5vh;
   animation-fill-mode: forwards;
+  filter: invert(1);
 }
 .spacetime {
   height: 3.6vh;
@@ -239,5 +242,24 @@ button:active {
 }
 
 .event-container {
-  background-image: url();
+  position: relative;
+  overflow: hidden;
+  border: 5px solid red;
+}
+
+/* Blurring background image of a div */
+.event-container::after {
+  content: "";
+  background-image: url('images/coding.jpg');
+  background-size: cover;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h2, .spacetime {
+  color: white;
 }
