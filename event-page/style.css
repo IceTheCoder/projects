@@ -214,28 +214,40 @@ h1, h2, footer {
 button {
   padding: 20px;
   border: none;
-  background-color: #2F3C7E;
+  background-color: #739BD0;
   color: white;
   border-radius: 10px;
   transition-duration: 0.2s;
 }
-
 button:hover {
-  background-color: #3e4d96;
   /* From https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow */
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(64, 64, 64, 0.24),0 17px 50px 0 rgba(64, 64, 64, 0.19);
+  background-color: #8ab1e4;
   cursor: pointer;
 }
-
 button:active {
-  box-shadow: 0 18px 24px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  background-color: #7a88ce;
+  box-shadow: 0 18px 24px 0 rgba(64, 64, 64, 0.24),0 17px 50px 0 rgba(64, 64, 64, 0.19);
+  background-color: #b2d4ff;
 }
 
 /* Div styles */
+body {
+  background: #121212;
+}
+
 .ticket {
-  background-color: #8AAAE5;
+  background: #121212;
   border-radius: 10px;
+}
+.ticket::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.07); /* White with 7% opacity */
+  pointer-events: none;
 }
 .tickets-from, .price {
   color: white;
@@ -244,9 +256,9 @@ button:active {
 .event-container {
   position: relative;
   overflow: hidden;
-  border: 5px solid red;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-
 /* Blurring background image of a div */
 .event-container::after {
   content: "";
@@ -260,6 +272,7 @@ button:active {
   height: 100%;
   z-index: -1;
 }
-h2, .spacetime {
+
+h1, h2, .spacetime, footer p, p, a {
   color: white;
 }
