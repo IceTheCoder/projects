@@ -218,7 +218,7 @@ h1, h2, footer {
 }
 @media screen and (min-width: 501px) {
   .icon {
-    margin-left: 10vw;
+    margin-left: 75px;
   }
 }
 
