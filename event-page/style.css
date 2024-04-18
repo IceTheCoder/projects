@@ -199,15 +199,15 @@ h1, h2, footer {
 
 /* Icons */
 .icon {
-  width: 5vh;
-  height: 5vh;
-  min-width: 30px;
-  min-height: 30px;
+  height: 4vh;
+  width: 4vh;
+  margin-right: 15px;
   animation-fill-mode: forwards;
   filter: invert(1);
 }
+/* Debug */
 .spacetime {
-  height: 3.6vh;
+  text-align: left;
 }
 @media screen and (max-height: 625px) {
   .spacetime {
