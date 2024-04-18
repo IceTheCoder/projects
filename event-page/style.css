@@ -28,11 +28,14 @@ main {
   display: flex;
   flex-direction: row;
   margin: 20px;
+  width: 90%;
 }
 .date, .location {
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.spacetime {
+  text-align: left;
 }
 .ticket {
   display: flex;
@@ -201,13 +204,9 @@ h1, h2, footer {
 .icon {
   height: 4vh;
   width: 4vh;
-  margin-right: 15px;
+  margin: 10px;
   animation-fill-mode: forwards;
   filter: invert(1);
-}
-/* Debug */
-.spacetime {
-  text-align: left;
 }
 @media screen and (max-height: 625px) {
   .spacetime {
