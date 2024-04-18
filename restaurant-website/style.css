@@ -272,7 +272,7 @@ textarea {
 }
 @media screen and (max-width: 480px) {
   .book-form {
-    width: 60vw;
+    width: 90vw;
   }
   .book-form label,
   .book-form select,
