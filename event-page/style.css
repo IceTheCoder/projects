@@ -202,15 +202,18 @@ h1, h2, footer {
 
 /* Icons */
 .icon {
-  height: 4vh;
-  width: 4vh;
   margin: 10px;
   animation-fill-mode: forwards;
   filter: invert(1);
 }
-@media screen and (max-height: 625px) {
-  .spacetime {
-    height: 7vh;
+@media screen and (orientation: portrait) {
+  .icon {
+    height: 4vh;
+  }
+}
+@media screen and (orientation: landscape) {
+  .icon {
+    width: 4vw;
   }
 }
 
