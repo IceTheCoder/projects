@@ -65,6 +65,10 @@ h1 {
 /* Form styles */
 form {
   justify-content: center;
+  /* Fix for Safari input submit buttons */
+  /* https://stackoverflow.com/questions/42520214/input-button-rendering-inconsistency-in-safari */
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .email-label {
