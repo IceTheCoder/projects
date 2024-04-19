@@ -86,10 +86,6 @@ h2 {
   align-items: center;
 }
 
-p, .para-2 ul {
-  height: 17vh;
-}
-
 @media screen and (max-width: 900px) {
   .para-2 ul {
     display: flex;
@@ -107,6 +103,7 @@ p, .para-2 ul {
   text-align: center;
   font-size: 24px;
   list-style: none;
+  height: 17vh;
 } 
 
 p {
