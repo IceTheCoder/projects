@@ -28,11 +28,14 @@ main {
   display: flex;
   flex-direction: row;
   margin: 20px;
+  width: 85%;
 }
 .date, .location {
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.spacetime {
+  text-align: left;
 }
 .ticket {
   display: flex;
@@ -199,19 +202,23 @@ h1, h2, footer {
 
 /* Icons */
 .icon {
-  width: 5vh;
-  height: 5vh;
-  min-width: 30px;
-  min-height: 30px;
+  margin: 10px;
   animation-fill-mode: forwards;
   filter: invert(1);
 }
-.spacetime {
-  height: 3.6vh;
+@media screen and (orientation: portrait) {
+  .icon {
+    height: 4vh;
+  }
 }
-@media screen and (max-height: 625px) {
-  .spacetime {
-    height: 7vh;
+@media screen and (orientation: landscape) {
+  .icon {
+    width: 4vw;
+  }
+}
+@media screen and (min-width: 501px) {
+  .icon {
+    margin-left: 75px;
   }
 }
 

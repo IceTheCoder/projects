@@ -364,9 +364,9 @@ img {
 }
 @media screen and (max-width: 960px) {
   .menu-image {
-    width: 30vw;
-    height: 40vh;
+    height: 30vh;
     min-width: 250px;
+    max-height: 250px;
   }
 }
 
