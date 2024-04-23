@@ -14,3 +14,32 @@ body {
 .text {
   max-width: 1000px;
 }
+
+div {
+  margin: 20px
+}
+
+h1, h2, h3, h4 {
+  margin-top: 10px;
+}
+
+/* Font sizes */
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p, li {
+  font-size: 18px;
+}
