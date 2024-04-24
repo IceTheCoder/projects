@@ -15,6 +15,11 @@ body {
   max-width: 1000px;
 }
 
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
 div {
   margin: 20px
 }
