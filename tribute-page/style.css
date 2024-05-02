@@ -30,6 +30,12 @@ body {
   justify-content: center;
 }
 
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .image {
   position: relative;
   display: flex;
