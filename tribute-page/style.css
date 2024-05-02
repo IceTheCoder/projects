@@ -24,8 +24,30 @@ body {
   width: 100%;
 }
 
-.images {
-  max-height: 2000px;
+.image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.07); /* White with 7% opacity */
+  pointer-events: none;
+}
+figcaption {
+  margin-top: 5px;
+  text-align: center;
 }
 
 .intro, .timeline {
