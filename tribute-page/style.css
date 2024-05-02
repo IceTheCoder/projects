@@ -20,20 +20,24 @@ body {
   max-width: 1000px;
 }
 
-#steve-jobs {
-  margin-top: 20px;
-}
-
 .intro .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 65%;
 }
 
 .images {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#intro-images {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  max-height: 250px;
 }
 
 .image {
