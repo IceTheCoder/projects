@@ -18,26 +18,34 @@ body {
 
 .content {
   max-width: 1000px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .intro .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%;
 }
-
 .images {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #intro-images {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
-  max-height: 250px;
+}
+@media screen and (min-width: 1000px) {
+  #intro-images {
+    max-height: 250px;
+  }
+  .intro .text {
+    max-width: 600px;
+  }
 }
 
 .image {
@@ -64,10 +72,40 @@ body {
 }
 img {
   border-radius: 5px;
+  width: 320px;
+  height: auto;
 }
 figcaption {
   margin-top: 5px;
   text-align: center;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraph-container .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    height: 70vw;
+    width: 70vw;
+    max-width: 80%;
+  }
+  img {
+    width: auto;
+    max-width: 60vw;
+    max-height: 60%;
+  }
 }
 
 .intro, .timeline {
@@ -107,6 +145,24 @@ h4 {
 p, li {
   font-size: 18px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p, li {
+    font-size: 16px;
+  }
 }
 
 /* Footer styles */
