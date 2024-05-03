@@ -12,6 +12,18 @@ body {
   background-color: #121212; /* Dark mode */
   color: white;
 }
+a {
+  color: skyblue;
+}
+a:hover {
+  color: #408EC6;
+}
+a:visited {
+  color: #D3C5E5;
+}
+a:active {
+  color: #2F3C7E;
+}
 
 /* Flex */
 .content {
