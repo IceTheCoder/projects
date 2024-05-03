@@ -70,6 +70,10 @@ p, li {
   margin-bottom: 15px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* Image div styles */
 .image {
   position: relative;
@@ -97,4 +101,5 @@ figcaption {
   margin-top: 5px;
   font-size: 18px;
   text-align: center;
+  max-width: 250px;
 }
