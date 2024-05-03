@@ -59,13 +59,16 @@ a:active {
 #intro, #apple-timeline-1 {
   flex-direction: column;
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 800px) {
   .wrapper, #intro, #apple-timeline-1 {
     flex-direction: row;
   }
 }
 
 /* Fonts */
+h1, h2, h3, h4 {
+  margin-top: 5px;
+}
 h1 {
   font-size: 36px;
   text-align: center;
