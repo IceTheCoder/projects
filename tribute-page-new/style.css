@@ -72,6 +72,12 @@ p, li, td {
   font-size: 20px;
   margin-bottom: 15px;
 }
+dt, dd, #sources li {
+  font-size: 16px;
+}
+dd {
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 524px) {
   h1 {
     margin: 15px 0; /* So we have "Steve Jobs" and "Tribute Page" on 2 different rows instead of "Steve Jobs Tribute" and "Page" */
@@ -98,6 +104,9 @@ ul {
 }
 ol {
   margin-left: 20px;
+}
+#sources {
+  padding-left: 5px;
 }
 
 /* Image div styles */
