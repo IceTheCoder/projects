@@ -22,13 +22,18 @@ body {
   max-width: 1200px;
 }
 
-.intro {
+/* Wrapper is a section or div containing text and an image(s) divs */
+.wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+  background-color: #121212;
+}
+#intro {
+  flex-direction: column;
 }
 @media screen and (min-width: 700px) {
-  .intro {
+  .wrapper, #intro {
     flex-direction: row;
   }
 }
@@ -75,11 +80,22 @@ ul {
 }
 
 /* Image div styles */
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  width: 250px;
+  max-height: 360px;
+}
 .image {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #121212;
   padding: 15px;
   margin: 15px;
@@ -92,7 +108,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.07); /* White with 7% opacity */
+  background-color: rgba(255, 255, 255, 0.10); /* White with 7% opacity */
   pointer-events: none;
   border-radius: 5px;
 }
