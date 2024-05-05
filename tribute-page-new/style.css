@@ -56,6 +56,9 @@ a:active {
   align-items: center;
   background-color: #121212;
 }
+div, section {
+  max-width: 95vw;
+}
 #intro {
   display: flex;
   flex-direction: column-reverse;
