@@ -177,10 +177,8 @@ img {
   pointer-events: none;
 }
 /* Mobile */
-@media screen and (max-width: 1280px) {
-  .image::before, img {
-    border-radius: 5px;
-  }
+.image::before, img {
+  border-radius: 5px;
 }
 /* PC */
 @media screen and (min-width: 1280px) {
