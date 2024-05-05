@@ -204,3 +204,7 @@ td {
 .no {
   text-align: center;
 }
+
+.version {
+  font-style: italic;
+}
