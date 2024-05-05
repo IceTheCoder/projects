@@ -1,13 +1,13 @@
 # html-practice-projects
 This repo contains some practice projects I'm working on to learn HTML.
 ## Featured projects
-### Restaurant website
-Polar Palette is a fictional restaurant website with several pages (home, menu, gallery, about, contact), a couple of forms, and an image carousel.
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53620542819/in/dateposted-public/" title="1"><img src="https://live.staticflickr.com/65535/53620542819_634d3f530d_k.jpg" alt="1"/></a>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53620542809/in/dateposted-public/" title="2"><img src="https://live.staticflickr.com/65535/53620542809_5f28b8d9a3_k.jpg" alt="2"/></a>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53620542829/in/dateposted-public/" title="3"><img src="https://live.staticflickr.com/65535/53620542829_25ba574c92_k.jpg" alt="3"/></a>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53619331257/in/dateposted-public/" title="4"><img src="https://live.staticflickr.com/65535/53619331257_e4b4e60551_k.jpg" alt="4"/></a>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53620653660/in/dateposted-public/" title="5"><img src="https://live.staticflickr.com/65535/53620653660_ff5bd7a2c8_k.jpg" alt="5"/></a>
+### Event page
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53670847386/in/dateposted-public/" title="2024-04-22-1419"><img src="https://live.staticflickr.com/65535/53670847386_95d474d0ce_o.png" width="250" alt="FrostCode event page"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53649145873/in/dateposted-public/" title="frostcode"><img src="https://live.staticflickr.com/65535/53649145873_b040ce92d2_o.png" width="760" alt="frostcode"/></a>
+
+### Tribute page
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53696508272/in/dateposted-public/" title="2024-05-04-1133-mobile-iphone15pro"><img src="https://live.staticflickr.com/65535/53696508272_91fa7ecb4a_o.png" width="250" alt="Steve Jobs Tribute Page"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53697747734/in/dateposted-public/" title="2024-05-1144-pc-1080p"><img src="https://live.staticflickr.com/65535/53697747734_3faa05e9b8_o.png" width="760" alt="Steve Jobs Tribute Page"/></a>
 
 ## License
 All the code in this repo is licensed under the MIT license. You can use any code snippet from this repo, as long as you include the exact copy of this repo's MIT license in your project.
