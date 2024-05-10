@@ -1,4 +1,4 @@
-# html-practice-projects
+# projects
 This repo contains some practice projects I'm working on to learn HTML.
 ## Featured projects
 ### Event page
