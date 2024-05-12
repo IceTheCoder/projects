@@ -1,5 +1,5 @@
 # projects
-This repo contains some practice projects I'm working on to learn web dev.
+This repo contains some practice projects I'm working on to learn web development.
 ## Featured projects
 ### Event page
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53670847386/in/dateposted-public/" title="2024-04-22-1419"><img src="https://live.staticflickr.com/65535/53670847386_95d474d0ce_o.png" width="250" alt="FrostCode event page"/></a>
