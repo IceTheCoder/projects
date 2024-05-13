@@ -52,6 +52,29 @@ main {
 .nav-list a {
   padding: 0 10px; /* Adjust padding as needed */
 }
+/* Button styles */
+button, .submit {
+  padding: 20px;
+  border: none;
+  background-color: #739BD0;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+button:hover, .submit:hover {
+  /* From https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow */
+  box-shadow: 0 12px 16px 0 rgba(64, 64, 64, 0.24),0 17px 50px 0 rgba(64, 64, 64, 0.19);
+  background-color: #8ab1e4;
+  cursor: pointer;
+}
+button:active, .submit:active {
+  box-shadow: 0 15px 20px 0 rgba(64, 64, 64, 0.24),0 17px 50px 0 rgba(64, 64, 64, 0.19);
+  background-color: #b2d4ff;
+}
+/*
 .buttons {
   margin: 20px;
   display: flex;
@@ -62,7 +85,7 @@ main {
   margin: 20px;
   width: 15vw;
   height: 10vh;
-}
+} */
 .header-body {
   display: flex;
   flex-direction: column;
@@ -316,6 +339,7 @@ textarea {
 }
 
 /* Buttons */
+/*
 button, .submit {
   width: 17vw;
   height: 13vh;
@@ -335,7 +359,7 @@ button:active, .submit:active {
   position: relative;
   top: 10px;
   box-shadow: none;
-}
+} */ 
 .submit {
   margin: auto;
   margin-top: 30px;
