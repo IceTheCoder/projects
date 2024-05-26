@@ -353,7 +353,7 @@ img {
 .carousel img {
   width: 12vw;
   height: 28vh;
-  min-width: 175px;
+  min-width: 300px;
   min-height: 350px;
   margin: 5px 10px;
   filter: blur(2px);
