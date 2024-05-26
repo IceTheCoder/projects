@@ -322,17 +322,9 @@ img {
   background-size: cover;
 }
 .menu-image {
-  display: block;
-  margin: 0 auto;
-  width: 15vw;
-  height: 20vh;
-}
-@media screen and (max-width: 960px) {
-  .menu-image {
-    height: 30vh;
-    min-width: 250px;
-    max-height: 250px;
-  }
+  height: 30vh;
+  min-width: 250px;
+  max-height: 250px;
 }
 
 /* Carousel */
@@ -413,7 +405,12 @@ section {
   
 }
 figcaption {
-  font-size: 1.75vh;
+  font-size: 18px;
+}
+@media screen and (min-width: 960px) {
+  figcaption {
+    font-size: 22px;
+  }
 }
 
 .menu-body {
@@ -430,14 +427,9 @@ figcaption {
   flex-wrap: wrap;
 }
 figcaption {
-  max-width: 10vw;
+  max-width: 100%;
   margin: 0 2vw;
   text-align: center;
-}
-@media screen and (max-width: 960px) {
-  figcaption {
-    max-width: 20vw;
-  }
 }
 
 .menu-category {
