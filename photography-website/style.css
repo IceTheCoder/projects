@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  max-width: 90vw;
+}
+
+.carousel, .images-carousel {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
