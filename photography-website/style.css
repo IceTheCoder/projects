@@ -22,6 +22,17 @@ header {
   align-items: center;
 }
 
+#camera {
+  height: 40vh; /* 320px for 800px height */
+  max-width: 100vh;
+}
+
+#camera-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .work {
   display: flex;
   flex-direction: column;
@@ -40,12 +51,31 @@ h2 {
   font-size: 32px;
   margin-top: 10px;
 }
+button {
+  font-size: 24px;
+}
+p {
+  font-size: 16px;
+}
+@media screen and (min-width: 850px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  button {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
 
 button {
   width: 100px;
   height: 50px;
   margin: 0 5px;
-  font-size: 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
