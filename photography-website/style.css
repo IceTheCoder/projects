@@ -30,10 +30,11 @@ h1 {
 
 /* Images */
 img {
-  width: 320px;
-  height: 320px;
   object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
   object-position: center; /* Centers the image within the container */
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
 }
 
 .carousel, .images-carousel {
