@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   color: white;
 }
 
+/* Images */
 img {
   width: 320px;
   height: 320px;
