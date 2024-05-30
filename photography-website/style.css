@@ -29,6 +29,7 @@ header {
   align-items: center;
   background-color: #171717;
   border-radius: 15px;
+  padding-bottom: 10px;
 }
 
 /* Font sizes */
@@ -40,6 +41,26 @@ h2 {
   margin-top: 10px;
 }
 
+button {
+  width: 100px;
+  height: 50px;
+  margin: 0 5px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #272727;
+  color: white;
+}
+
+button:hover {
+  background-color: #373737;
+}
+
+button:active {
+  background-color: #474747;
+}
+
 /* Images */
 img {
   object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
@@ -48,6 +69,10 @@ img {
   height: 320px;
   border-radius: 10px;
   margin: 10px;
+}
+
+figcaption {
+  margin-bottom: 10px;
 }
 
 .carousel, .images-carousel {
