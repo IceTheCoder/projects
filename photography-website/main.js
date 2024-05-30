@@ -1,3 +1,4 @@
+// When adding a new image, don't forget to add its alt and its credits.
 const images = [
   'images/img1.jpg',
   'images/img2.jpg',
