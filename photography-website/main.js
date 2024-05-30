@@ -3,8 +3,19 @@ const images = [
   'images/img2.jpg',
   'images/img3.jpg'
 ]
+const alts = [
+  'green wooden door on gray concrete floor',
+  'a group of green plants with yellow flowers',
+  'a white vase with a white flower in it'
+]
+const credits = [
+  'Photo by <a href="https://unsplash.com/@jakenackos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jake Nackos</a> on <a href="https://unsplash.com/photos/green-wooden-door-on-gray-concrete-floor-Ga7aBzN7qDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+  'Photo by <a href="https://unsplash.com/@tyaglovsky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Serhii Tyaglovsky</a> on <a href="https://unsplash.com/photos/a-group-of-green-plants-with-yellow-flowers-YO42OCYJrhU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+  'Photo by <a href="https://unsplash.com/@nataliekinnear?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Natalie Kinnear</a> on <a href="https://unsplash.com/photos/a-white-vase-with-a-white-flower-in-it-4eu57Wij3HQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+]
 let currentIndex = 0;
 const carouselImage = document.getElementById('carousel-img');
+const figcaption = document.querySelector('figcaption');
 
 function showImage(index) {
   // Ensure the index is within bounds
@@ -16,6 +27,8 @@ function showImage(index) {
     currentIndex = index;
   }
   carouselImage.src = images[currentIndex];
+  carouselImage.alt = alts[currentIndex];
+  figcaption.innerHTML = credits[currentIndex];
 }
 
 function showNextImage() {
