@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px 0;
 }
 
 .work {
@@ -40,7 +41,7 @@ header {
   background-color: #171717;
   border-radius: 15px;
   padding-bottom: 10px;
-  margin: 20px 10px;
+  margin: 0 10px;
 }
 
 /* Font sizes */
@@ -82,6 +83,12 @@ button {
   background-color: #272727;
   color: white;
 }
+@media screen and (min-width: 850px) {
+  button {
+    width: 150px;
+    height: 75px;
+  }
+} 
 
 button:hover {
   background-color: #373737;
@@ -99,6 +106,12 @@ img {
   height: 320px;
   border-radius: 10px;
   margin: 10px;
+}
+@media screen and (min-width: 850px) {
+  img {
+    width: 480px;
+    height: 480px;
+  }
 }
 
 #camera {
