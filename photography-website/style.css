@@ -58,18 +58,24 @@ button {
 p {
   font-size: 16px;
 }
+
+figcaption {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 850px) {
   h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
   button {
     font-size: 28px;
   }
-  p {
-    font-size: 18px;
+  p, figcaption {
+    font-size: 20px;
   }
 }
 
@@ -118,10 +124,6 @@ img {
   width: 150%;
   border-radius: 0;
   margin: 0;
-}
-
-figcaption {
-  margin-bottom: 10px;
 }
 
 .carousel, .images-carousel {
