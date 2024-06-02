@@ -103,11 +103,14 @@ button:active {
 }
 
 .contact h2 {
-  text-align: center;
+  font-size: 32px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .contact p {
   line-height: 1.6;
+  margin: 5px 0;
 }
 
 .contact a {
@@ -149,6 +152,10 @@ footer a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  #camera {
+    width: 100%;
+  }
+
   .camera-div, .work-section, .contact {
     margin: 10px;
   }
@@ -163,9 +170,5 @@ footer a:hover {
     font-size: 18px;
     padding: 8px 16px;
     margin: 5px;
-  }
-
-  #camera {
-    width: 100%;
   }
 }
