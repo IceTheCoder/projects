@@ -7,7 +7,6 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -17,7 +16,7 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  width: 100%;
+  width: 89vw;
 }
 
 header h1 {
@@ -127,6 +126,7 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+  width: 89vw;
 }
 
 footer h2 {
