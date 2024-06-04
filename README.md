@@ -1,6 +1,10 @@
 # projects
 This repo contains projects I'm working on to learn web development.
 ## Featured projects
+### Photography website
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53769645339/in/dateposted-public/" title="IMG_1981"><img src="https://live.staticflickr.com/65535/53769645339_8ecacba153_k.jpg" width="250" alt="Ice Photography website page"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53769318436/in/dateposted-public/" title="2"><img src="https://live.staticflickr.com/65535/53769318436_11b2e888e2_k.jpg" width="760" alt="ice photography"/></a>
+
 ### Event page
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53670847386/in/dateposted-public/" title="2024-04-22-1419"><img src="https://live.staticflickr.com/65535/53670847386_95d474d0ce_o.png" width="250" alt="FrostCode event page"/></a>
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53649145873/in/dateposted-public/" title="frostcode"><img src="https://live.staticflickr.com/65535/53649145873_b040ce92d2_o.png" width="760" alt="frostcode"/></a>
