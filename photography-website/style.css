@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 89vw;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Camera Image */
+.camera-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  max-height: 500px;
+  margin: 10px;
+}
+
+#camera {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Work Section */
+.work-section {
+  width: 90vw;
+  max-width: 800px;
+  background-color: #222222;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content .work-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 15px;
+}
+
+.carousel {
+  text-align: center;
+  margin: 0;
+}
+
+#carousel-img {
+  width: 100%;
+  max-width: 700px;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.1em;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  background-color: #323232;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #424242;
+}
+
+button:active {
+  background: #525252;
+}
+
+/* Contact Section */
+.contact {
+  width: 90vw;
+  max-width: 800px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #222222;
+}
+
+.content .contact h2 {
+  font-size: 32px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.contact p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.contact a {
+  color: #0066cc;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 89vw;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 10px 0;
+}
+
+a {
+  color: #ffcc00;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  header, footer, .camera-div {
+    width: 95vw;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 915px)  {
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .work-section, .contact {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-width: 600px;
+    padding: 20px;
+  }
+}
