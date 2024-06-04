@@ -1,5 +1,4 @@
 // When adding a new image, don't forget to add its alt and its credits.
-// Deliver images in webp for better performance!
 const images = [
   'images/img1.webp',
   'images/img2.webp',
