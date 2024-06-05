@@ -189,11 +189,12 @@ h1, h2, footer {
   .tickets-from, button {
     font-size: 5.6vw;
   }
+  /* https://stackoverflow.com/questions/40528290/how-to-implement-max-font-size */
   p {
-    font-size: 4.4vw;
+    font-size: min(6vw, 25px);
   }
   footer p {
-    font-size: 3.4vw;
+    font-size: min(3.4vw, 18px);
   }
   span {
     text-align: center;
