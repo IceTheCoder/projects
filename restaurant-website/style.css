@@ -56,26 +56,22 @@ main {
 button, .submit {
   width: 15vw;
   max-width: 250px;
-  height: 10vh;
-  padding: 20px;
+  height: 5vw;
+  padding: 8px 16px;
   border: none;
-  background-color: #739BD0;
+  background-color: #525252;
   color: white;
-  border-radius: 10px;
-  transition-duration: 0.2s;
+  border-radius: 5px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
-}
-button:hover, .submit:hover {
-  /* From https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_shadow */
-  box-shadow: 0 0px 0px 0 rgba(64, 64, 64, 0.24),0 17px 50px 0 rgba(64, 64, 64, 0.19);
-  background-color: #8ab1e4;
   cursor: pointer;
 }
+button:hover, .submit:hover {
+  background-color: #626262;
+}
 button:active, .submit:active {
-  box-shadow: 0 0px 0px 0 rgba(64, 64, 64, 0.24),0 17px 50px 0 rgba(64, 64, 64, 0.19);
-  background-color: #b2d4ff;
+  background: #727272;
 }
 .submit {
   margin: auto;
@@ -103,6 +99,8 @@ button:active, .submit:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #121212;
+  color: white;
 }
 iframe {
   border: none;
@@ -235,10 +233,10 @@ p, tr, td {
 
 /* Colours & Decoration */
 h1, nav a {
-  color: black;
+  color: white;
 }
 .nav-list li a {
-  color: black;
+  color: white;
 }
 footer p {
   color: white;
@@ -247,7 +245,7 @@ a {
   text-decoration: none;
 }
 body:not(.header-body) {
-  background-color: #121212;
+  background-color: #171717;
   color: white;
 }
 
@@ -258,6 +256,10 @@ header {
 }
 
 /* Form */
+.book-form {
+  background: #323232;
+  border: none;
+}
 .book-form fieldset {
   border: none;
   margin: 0;
@@ -265,7 +267,7 @@ header {
 }
 .book-form label {
   margin-bottom: 5px;
-  color: #333;
+  color: white;
 }
 .book-form select,
 .book-form input[type=datetime-local] {
@@ -442,6 +444,11 @@ figcaption {
 
 /* Footer */
 footer {
+  background: #121212;
+  color: white;
+  font-size: 1.3rem;
+  padding: 2vh;
   text-align: center;
   margin-top: 1vh;
+  width: 100%;
 }
