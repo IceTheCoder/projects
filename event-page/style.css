@@ -191,7 +191,7 @@ h1, h2, footer {
   }
   /* https://stackoverflow.com/questions/40528290/how-to-implement-max-font-size */
   p {
-    font-size: min(4.4vw, 25px);
+    font-size: min(6vw, 25px);
   }
   footer p {
     font-size: min(3.4vw, 18px);
