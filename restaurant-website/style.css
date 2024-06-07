@@ -54,10 +54,9 @@ main {
 }
 /* Button styles */
 button, .submit {
-  width: 15vw;
-  max-width: 250px;
-  height: 5vw;
-  padding: 8px 16px;
+  width: 250px;
+  height: 90px;
+  padding: 16px;
   border: none;
   background-color: #525252;
   color: white;
@@ -169,7 +168,7 @@ fieldset {
 .book-form {
   max-width: 750px;
   margin: 20px;
-  padding: 50px;
+  padding: 25px 50px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -210,7 +209,6 @@ fieldset {
   z-index: -1;
 }
 
-/* REWORK FONT SIZES */
 /* Font Sizes */
 h1 {
   font-size: 45px;
@@ -219,7 +217,7 @@ h2 {
   font-size: 50px;
 }  
 button, .submit, a button {
-  font-size: 40px;
+  font-size: 36px;
 }
 label, select, input {
   font-size: 30px;
@@ -313,7 +311,7 @@ input, textarea {
 input:hover, textarea:hover {
   background-color: #80c8ff;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1080px) {
   #menu-button, #contact-button {
     display: none;
   }
