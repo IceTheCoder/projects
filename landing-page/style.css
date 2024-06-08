@@ -92,7 +92,7 @@ form {
   flex-wrap: wrap;
 }
 
-button {
+button, .button {
   min-height: 90px;
   width: 12vw;
   min-width: 150px;
@@ -107,11 +107,11 @@ button {
   vertical-align: middle;
 }
 
-button:hover {
+button:hover, .button:hover {
   background-color: #424242;
 }
 
-button:active {
+button:active, .button:active {
   background-color: #525252;
   position: relative;
   top: 10px;
