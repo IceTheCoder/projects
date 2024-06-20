@@ -145,6 +145,15 @@ button:active {
   width: 130px;
   height: 60px;
   margin-bottom: 15px;
+  background-color: #272727;
+}
+
+#mode-switch:hover {
+  background-color: #373737;
+}
+
+#mode-switch:active {
+  background: #474747;
 }
 
 /* Footer */
