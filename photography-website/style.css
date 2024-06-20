@@ -54,6 +54,12 @@ header h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content .work-section h2 {
   text-align: center;
   font-size: 36px;
@@ -101,7 +107,49 @@ button:hover {
 }
 
 button:active {
-  background: #525252;
+  background-color: #525252;
+}
+
+/* Button classes for light mode */
+.light-mode {
+  background: rgb(219, 219, 219);
+}
+
+.light-mode:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.light-mode:active {
+  background-color: rgb(182, 182, 182);
+}
+
+/* Mode Switch Button */
+#mode-switch {
+  width: 130px;
+  height: 60px;
+  margin-bottom: 15px;
+  background-color: #272727;
+}
+
+#mode-switch:hover {
+  background-color: #373737;
+}
+
+#mode-switch:active {
+  background-color: #474747;
+}
+
+/* Button classes for light mode */
+#mode-switch.light-mode {
+  background-color: rgb(219, 219, 219);
+}
+
+#mode-switch.light-mode:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+#mode-switch.light-mode:active {
+  background-color: rgb(182, 182, 182);
 }
 
 /* Contact Section */
