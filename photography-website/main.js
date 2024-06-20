@@ -1,3 +1,4 @@
+// Image Carousel
 // When adding a new image, don't forget to add its alt and its credits.
 const images = [
   'images/img1.webp',
@@ -42,3 +43,11 @@ function showPreviousImage() {
 
 document.getElementById('next').addEventListener('click', showNextImage);
 document.getElementById('prev').addEventListener('click', showPreviousImage);
+
+// Dark/Light Mode Switch
+const button = document.getElementById("mode-switch");
+
+// https://www.shecodes.io/athena/41313-how-to-apply-a-function-to-a-specific-button-in-javascript
+button.addEventListener("click", function() {
+  console.log("Dark/Light Mode Switch button clicked.")
+});
