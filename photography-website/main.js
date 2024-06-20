@@ -46,8 +46,28 @@ document.getElementById('prev').addEventListener('click', showPreviousImage);
 
 // Dark/Light Mode Switch
 const button = document.getElementById("mode-switch");
+let mode = "dark";
 
 // https://www.shecodes.io/athena/41313-how-to-apply-a-function-to-a-specific-button-in-javascript
 button.addEventListener("click", function() {
-  console.log("Dark/Light Mode Switch button clicked.")
+  if (mode === "dark") {
+    mode = "light";
+    lightMode();
+  } else if (mode === "light") {
+    mode = "dark";
+    darkMode();
+  }
+  console.log(mode);
 });
+
+function lightMode() {
+  button.innerHTML = "Switch to Dark Mode";
+  document.body.style.backgroundColor = "rgb(255, 255, 255)";
+  document.querySelector("header").style.backgroundColor = "rgb(237, 237, 237)";
+}
+
+function darkMode() {
+  button.innerHTML = "Switch to Light Mode";
+  document.body.style.backgroundColor = "#121212";
+  document.querySelector("header").style.backgroundColor = "#222222";
+}
