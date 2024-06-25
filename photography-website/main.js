@@ -20,7 +20,7 @@ const carouselImage = document.getElementById('carousel-img');
 const figcaption = document.querySelector('figcaption');
 
 /**
- * Ensure the image index is within the bouds of the images array,
+ * Ensure the image index is within the bounds of the images array,
  * Set the carousel image, its alt and its figcaption to correspond to that index
  * @param {int} index - The index of the image to be shown 
  */
