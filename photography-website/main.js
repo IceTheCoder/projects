@@ -19,6 +19,11 @@ let currentIndex = 0;
 const carouselImage = document.getElementById('carousel-img');
 const figcaption = document.querySelector('figcaption');
 
+/**
+ * Ensure the image index is within the bouds of the images array,
+ * Set the carousel image, its alt and its figcaption to correspond to that index
+ * @param {int} index - The index of the image to be shown 
+ */
 function showImage(index) {
   // Ensure the index is within bounds
   if (index < 0) {
@@ -33,10 +38,16 @@ function showImage(index) {
   figcaption.innerHTML = credits[currentIndex];
 }
 
+/**
+ * Increase the index by 1 and run the showImage method to update the image
+ */
 function showNextImage() {
   showImage(currentIndex + 1);
 }
 
+/**
+ * Decrease the index by 1 and run the showImage method to update the image
+ */
 function showPreviousImage() {
   showImage(currentIndex - 1);
 }
@@ -61,6 +72,9 @@ button.addEventListener("click", function() {
   console.log(mode);
 });
 
+/**
+ * Update the page to light mode
+ */
 function lightMode() {
   button.innerHTML = "Switch to Dark Mode";
   document.body.style.backgroundColor = "rgb(255, 255, 255)";
@@ -84,6 +98,9 @@ function lightMode() {
   document.querySelector("footer").style.color = "black";
 }
 
+/**
+ * Update the page to dark mode
+ */
 function darkMode() {
   button.innerHTML = "Switch to Light Mode";
   document.body.style.backgroundColor = "#121212";
