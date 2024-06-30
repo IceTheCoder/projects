@@ -20,8 +20,8 @@
         <img id="img2" src="images/image2.jpg" alt="Pizza margherita">
         <figcaption>Pizza margheritta</figcaption>
       </div>
-      <div id="lavacake">
-        <img id="img3" class="active" src="images/image3.jpg" alt="Lavacake">
+      <div id="lavacake" class="active">
+        <img id="img3" src="images/image3.jpg" alt="Lavacake">
         <figcaption>Lavacake</figcaption>
       </div>
       <div id="fries">
@@ -53,7 +53,7 @@
   </footer>
   <!-- Prev and next buttons cycling through images -->
   <script>
-    var images = Array.from(document.querySelectorAll('.carousel img'));
+    var images = Array.from(document.querySelectorAll('.carousel div'));
     var currentIndex = images.findIndex(img => img.classList.contains('active'));
     document.getElementById('prev').addEventListener('click', function() {
         images[currentIndex].classList.remove('active');

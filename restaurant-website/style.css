@@ -339,12 +339,12 @@ img {
   flex-wrap: wrap;
   margin: 20px;
 }
-.carousel img {
+.carousel div {
   margin: 5px 10px;
   filter: blur(2px);
   object-fit: cover;
 }
-.carousel img.active {
+.carousel div.active {
   filter: none;
 }
 .carousel img {
@@ -353,7 +353,6 @@ img {
   min-width: 300px;
   min-height: 350px;
   margin: 5px 10px;
-  filter: blur(2px);
   object-fit: cover;
 }
 @media screen and (min-width: 1600px) {
