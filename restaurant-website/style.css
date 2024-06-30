@@ -72,6 +72,15 @@ button:hover, .submit:hover {
 button:active, .submit:active {
   background: #727272;
 }
+#prev, #next {
+  background: rgb(40, 40, 40);
+}
+#prev:hover, #next:hover {
+  background: rgb(50, 50, 50);;
+}
+#prev:active, #next:active {
+  background: rgb(60, 60, 60);;
+}
 .submit {
   margin: auto;
   margin-top: 30px;
@@ -331,6 +340,16 @@ img {
   max-height: 250px;
 }
 
+/* Excluding gallery figcaptions */
+figcaption {
+  font-size: 18px;
+}
+@media screen and (min-width: 960px) {
+  figcaption {
+    font-size: 22px;
+  }
+}
+
 /* Carousel */
 .carousel {
   display: flex;
@@ -339,25 +358,30 @@ img {
   flex-wrap: wrap;
   margin: 20px;
 }
-.carousel img {
-  margin: 5px 10px;
-  filter: blur(2px);
-  object-fit: cover;
-}
-.carousel img.active {
+.carousel div.active {
   filter: none;
 }
 .carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel div {
   width: 12vw;
   height: 28vh;
   min-width: 300px;
   min-height: 350px;
-  margin: 5px 10px;
+  margin: 20px 10px;
   filter: blur(2px);
-  object-fit: cover;
 }
-@media screen and (min-width: 1600px) {
-  .carousel img.active {
+.carousel div figcaption {
+  font-size: 22px;
+}
+.carousel div.active figcaption {
+  font-size: 30px;
+}
+@media screen and (min-width: 1890px) {
+  .carousel div.active {
     filter: none;
     width: 16vw;
     height: 37vh;
@@ -366,14 +390,17 @@ img {
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .carousel img, .carousel img.active{
+@media screen and (max-width: 1889px) {
+  .carousel div, .carousel div.active{
     filter: none;
     width: 12vw;
     height: 28vh;
   }
   #prev, #next {
     display: none;
+  }
+  .carousel div.active figcaption {
+    font-size: 22px;
   }
 }
 
@@ -407,14 +434,6 @@ section {
     font-size: 20px;
   }
   
-}
-figcaption {
-  font-size: 18px;
-}
-@media screen and (min-width: 960px) {
-  figcaption {
-    font-size: 22px;
-  }
 }
 
 .menu-body {
