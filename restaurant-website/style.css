@@ -348,6 +348,11 @@ img {
   filter: none;
 }
 .carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel div {
   width: 12vw;
   height: 28vh;
   min-width: 300px;
@@ -356,7 +361,7 @@ img {
   object-fit: cover;
 }
 @media screen and (min-width: 1600px) {
-  .carousel img.active {
+  .carousel div.active {
     filter: none;
     width: 16vw;
     height: 37vh;
@@ -366,7 +371,7 @@ img {
 }
 
 @media screen and (max-width: 1600px) {
-  .carousel img, .carousel img.active{
+  .carousel div, .carousel div.active{
     filter: none;
     width: 12vw;
     height: 28vh;
