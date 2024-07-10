@@ -1,5 +1,5 @@
 # projects
-This repo contains projects I'm working on to learn web development, mainly HTML, CSS, and JavaScript.
+This repository contains projects I'm working on to learn web development, mainly HTML, CSS, and JavaScript.
 ## Featured projects
 ### Photography website
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197764307@N08/53769645339/in/dateposted-public/" title="IMG_1981"><img src="https://live.staticflickr.com/65535/53769645339_8ecacba153_k.jpg" width="250" alt="Ice Photography website page"/></a>
