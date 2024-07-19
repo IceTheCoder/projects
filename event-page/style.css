@@ -74,13 +74,16 @@ main {
 
 /* Widths & Heights */
 @media screen and (max-width: 500px) {
-  .description, .ticket {
+  .description {
     width: 80%;
+  }
+  .ticket {
+    width: 70%;
   }
 }
 @media screen and (orientation: landscape) {
   .description, .ticket {
-    min-width: 15vw;
+    min-width: 20vw;
   }
 }
 @media screen and (orientation: portrait) {
@@ -95,7 +98,7 @@ main {
 }
 @media screen and (min-height: 575px) and (max-height: 949px) {
   .description, .ticket {
-    min-height: 40vh;
+    min-height: 30vh;
   }
 }
 @media screen and (min-height: 950px) and (orientation: landscape) {
@@ -260,7 +263,7 @@ body {
 
 .ticket {
   background: #121212;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .ticket::before {
   content: "";
