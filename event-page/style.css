@@ -53,7 +53,10 @@ main {
 }
 @media screen and (max-height: 625px) {
   .event-container {
-    height: 100vh;
+    padding: 20px;
+  }
+  .ticket {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -64,11 +67,6 @@ main {
 @media screen and (max-width: 1279px) {
   .description, .information {
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 1279px) {
-  .ticket {
-    padding-left: 0;
   }
 }
 
@@ -184,7 +182,7 @@ h1, h2, footer {
     font-size: 9.4vw;
   }
   h2 {
-    font-size: 5.6vw;
+    font-size: 7vw;
   }
   .spacetime {
     font-size: 5.1vw;
