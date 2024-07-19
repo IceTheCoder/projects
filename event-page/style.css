@@ -158,23 +158,23 @@ h1, h2, footer {
 }
 @media screen and (orientation: landscape) and (max-height: 799px) {
   h1 {
-    font-size: 37px; /* 50px on 1080p */
+    font-size: 48px; 
   }
   h2 {
-    font-size: 29px; /* 40px on 1080p */
+    font-size: 29px; 
   }
   .spacetime {
-    font-size: 26px; /* 36px on 1080p */
+    font-size: 26px; 
   }
   .tickets-from, button {
-    font-size: 22px; /* 30px on 1080p */
+    font-size: 22px;
   }
   p {
-    font-size: 20px; /* 24px on 1080p */
+    font-size: 20px; 
   }
   footer p {
-    font-size: 13px; /* 18px on 1080p */
-  }  
+    font-size: 13px;
+  }
 }
 @media screen and (orientation: portrait) {
   h1 {
