@@ -286,7 +286,7 @@ body {
 /* Blurring background image of a div */
 .event-container::after {
   content: "";
-  background-image: url('images/coding.jpg');
+  background-image: url('images/coding.webp');
   background-size: cover;
   filter: blur(2px);
   position: absolute;
