@@ -53,7 +53,10 @@ main {
 }
 @media screen and (max-height: 625px) {
   .event-container {
-    height: 100vh;
+    padding: 20px;
+  }
+  .ticket {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -66,21 +69,19 @@ main {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1279px) {
-  .ticket {
-    padding-left: 0;
-  }
-}
 
 /* Widths & Heights */
 @media screen and (max-width: 500px) {
-  .description, .ticket {
+  .description {
     width: 80%;
+  }
+  .ticket {
+    width: 70%;
   }
 }
 @media screen and (orientation: landscape) {
   .description, .ticket {
-    min-width: 15vw;
+    min-width: 20vw;
   }
 }
 @media screen and (orientation: portrait) {
@@ -95,7 +96,7 @@ main {
 }
 @media screen and (min-height: 575px) and (max-height: 949px) {
   .description, .ticket {
-    min-height: 40vh;
+    min-height: 30vh;
   }
 }
 @media screen and (min-height: 950px) and (orientation: landscape) {
@@ -158,30 +159,30 @@ h1, h2, footer {
 }
 @media screen and (orientation: landscape) and (max-height: 799px) {
   h1 {
-    font-size: 37px; /* 50px on 1080p */
+    font-size: 48px; 
   }
   h2 {
-    font-size: 29px; /* 40px on 1080p */
+    font-size: 29px; 
   }
   .spacetime {
-    font-size: 26px; /* 36px on 1080p */
+    font-size: 26px; 
   }
   .tickets-from, button {
-    font-size: 22px; /* 30px on 1080p */
+    font-size: 22px;
   }
   p {
-    font-size: 20px; /* 24px on 1080p */
+    font-size: 20px; 
   }
   footer p {
-    font-size: 13px; /* 18px on 1080p */
-  }  
+    font-size: 13px;
+  }
 }
 @media screen and (orientation: portrait) {
   h1 {
-    font-size: 9.4vw;
+    font-size: 8vw;
   }
   h2 {
-    font-size: 5.6vw;
+    font-size: 6vw;
   }
   .spacetime {
     font-size: 5.1vw;
@@ -260,7 +261,7 @@ body {
 
 .ticket {
   background: #121212;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .ticket::before {
   content: "";
@@ -285,7 +286,7 @@ body {
 /* Blurring background image of a div */
 .event-container::after {
   content: "";
-  background-image: url('images/coding.jpg');
+  background-image: url('images/coding.webp');
   background-size: cover;
   filter: blur(2px);
   position: absolute;
