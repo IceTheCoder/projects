@@ -179,10 +179,10 @@ h1, h2, footer {
 }
 @media screen and (orientation: portrait) {
   h1 {
-    font-size: 9.4vw;
+    font-size: 8vw;
   }
   h2 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .spacetime {
     font-size: 5.1vw;
