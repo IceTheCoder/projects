@@ -3,6 +3,9 @@ const button = document.getElementById("mode-switch");
 let mode = "dark";
 let buttons = document.getElementsByTagName("button");
 
+// The elements with this class name are to be ignored when changing background colors
+let ignoredElementsClassName = "ignore";
+
 // https://www.shecodes.io/athena/41313-how-to-apply-a-function-to-a-specific-button-in-javascript
 button.addEventListener("click", function() {
   if (mode === "dark") {
@@ -24,7 +27,7 @@ function lightMode() {
 
   function setBackgroundColor(element, r, g, b) {
     // Set the background color for the current element if it's a div
-    if (element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') {
+    if ((element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Calculate the new RGB values for the child elements
@@ -48,8 +51,9 @@ function lightMode() {
 
   // Iterate over each element
   allElements.forEach(element => {
-      // Change the text color
+    if (!(element.classList.contains(ignoredElementsClassName))) {
       element.style.color = "black";
+    }
   });
 
   // Start the recursive background color setting from the body element
@@ -65,7 +69,7 @@ function darkMode() {
 
   function setBackgroundColor(element, r, g, b) {
     // Set the background color for the current element if it's a div
-    if (element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') {
+    if ((element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Calculate the new RGB values for the child elements
@@ -89,8 +93,10 @@ function darkMode() {
 
   // Iterate over each element
   allElements.forEach(element => {
-      // Change the text color
+    // Change the text color
+    if (!(element.classList.contains(ignoredElementsClassName))) {
       element.style.color = "white";
+    }
   });
 
   setBackgroundColor(document.body, 34, 34, 34);
