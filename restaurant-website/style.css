@@ -224,6 +224,7 @@ h1 {
 }
 h2 {
   font-size: 50px;
+  margin-top: 20px;
 }  
 button, .submit, a button {
   font-size: 36px;
@@ -313,7 +314,7 @@ textarea {
   }  
 }
 @media screen and (max-width: 2559px) {
-  p, h2, section {
+  p, section {
     margin: 0px;
   }
 }
