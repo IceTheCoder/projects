@@ -22,23 +22,30 @@ function lightMode() {
   button.innerHTML = "Switch to Dark Mode";
   document.body.style.backgroundColor = "rgb(255, 255, 255)";
 
-  document.querySelector("header").style.backgroundColor = "rgb(237, 237, 237)";
-  document.getElementsByClassName("contact")[0].style.backgroundColor = "rgb(237, 237, 237)";
-  document.querySelector("footer").style.backgroundColor = "rgb(237, 237, 237)";
+  function setBackgroundColor(element, r, g, b) {
+    // Set the background color for the current element if it's a div
+    if (element.tagName.toLowerCase() === 'section') {
+      element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
-  document.getElementsByClassName("work-section")[0].style.backgroundColor = "rgb(237, 237, 237)";
+      // Calculate the new RGB values for the child elements
+      let newR = Math.max(r - 30, 0);
+      let newG = Math.max(g - 30, 0);
+      let newB = Math.max(b - 30, 0);
 
-  // Change each button's class to light-mode
-  // https://stackoverflow.com/questions/6405165/how-to-change-a-pseudo-class-style-through-javascript
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].style.color = "black";
-    buttons[i].className = "light-mode";
+      // Iterate through each child element and set its background color
+      Array.from(element.children).forEach(child => {
+        setBackgroundColor(child, newR, newG, newB);
+      });
+    } else {
+      // If the element is not a div, still traverse its children
+      Array.from(element.children).forEach(child => {
+        setBackgroundColor(child, r, g, b);
+      });
+    }
   }
-  document.getElementById("mode-switch").className = "light-mode";
 
-  document.body.style.color = "black";
-  document.querySelector("header").style.color = "black";
-  document.querySelector("footer").style.color = "black";
+  // Start the recursive background color setting from the body element
+  setBackgroundColor(document.body, 225, 225, 225);
 }
 
 /**
