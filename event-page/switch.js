@@ -24,7 +24,7 @@ function lightMode() {
 
   function setBackgroundColor(element, r, g, b) {
     // Set the background color for the current element if it's a div
-    if (element.tagName.toLowerCase() === 'section') {
+    if (element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Calculate the new RGB values for the child elements
@@ -65,7 +65,7 @@ function darkMode() {
 
   function setBackgroundColor(element, r, g, b) {
     // Set the background color for the current element if it's a div
-    if (element.tagName.toLowerCase() === 'section') {
+    if (element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Calculate the new RGB values for the child elements
@@ -93,5 +93,5 @@ function darkMode() {
       element.style.color = "white";
   });
 
-  setBackgroundColor(document.body, 18, 18, 18);
+  setBackgroundColor(document.body, 34, 34, 34);
 }
