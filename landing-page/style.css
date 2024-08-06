@@ -54,8 +54,11 @@ p {
 
 
 /* Header styles */
-h1, form, .headline {
+.intro {
   background-color: #222222;
+}
+
+h1, form, .headline {
   color: white;
   margin: 0;
   text-align: center;
