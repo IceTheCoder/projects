@@ -29,7 +29,7 @@ function lightMode() {
     // Set the background color for the current element if it's a div
     if ((element.tagName.toLowerCase() === 'section' || 
     element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'button') 
+    element.tagName.toLowerCase() === 'button' || element.tagName.toLowerCase() === 'input') 
     && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
@@ -72,7 +72,10 @@ function darkMode() {
 
   function setBackgroundColor(element, r, g, b) {
     // Set the background color for the current element if it's a div
-    if ((element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') && !(element.classList.contains(ignoredElementsClassName))) {
+    if ((element.tagName.toLowerCase() === 'section' || 
+    element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
+    element.tagName.toLowerCase() === 'button' || element.tagName.toLowerCase() === 'input') 
+    && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Calculate the new RGB values for the child elements
