@@ -106,4 +106,8 @@ function darkMode() {
   });
 
   setBackgroundColor(document.body, 34, 34, 34);
+
+  // EXTRA CODE SPECIFIC FOR THIS PROJECT
+  document.getElementById("contact-button").style.backgroundColor = "rgb(66, 66, 66)";
+  document.getElementById("mode-switch").style.backgroundColor = "rgb(66, 66, 66)";
 }
