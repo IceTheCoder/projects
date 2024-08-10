@@ -68,8 +68,15 @@ function darkMode() {
   document.body.style.backgroundColor = "rgb(18, 18, 18)";
 
   function setBackgroundColor(element, r, g, b) {
+    const tagName = element.tagName.toLowerCase();
+    const shouldChangeColor = 
+      (tagName === 'section' || tagName === 'header' || 
+       tagName === 'footer' || tagName === 'button' || 
+       tagName === 'input') && 
+      !element.classList.contains(ignoredElementsClassName);
+
     // Set the background color for the current element if it's a div
-    if ((element.tagName.toLowerCase() === 'section' || element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || element.tagName.toLowerCase() === 'button') && !(element.classList.contains(ignoredElementsClassName))) {
+    if (shouldChangeColor) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
       // Calculate the new RGB values for the child elements

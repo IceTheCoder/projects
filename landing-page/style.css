@@ -54,8 +54,11 @@ p {
 
 
 /* Header styles */
+.intro {
+  background-color: rgb(34, 34, 34);
+}
+
 h1, form, .headline {
-  background-color: #222222;
   color: white;
   margin: 0;
   text-align: center;
@@ -164,7 +167,7 @@ li, p {
 
 /* Colours */
 .page {
-  background-color: #323232;
+  background-color: rgb(50, 50, 50);
   color: white;
 }
 

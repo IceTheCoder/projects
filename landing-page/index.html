@@ -10,21 +10,23 @@
 <body>
   <main>
     <section class="page">
-      <h1>Sign up for IceTheCoder's blog</h1>
-      <p class="headline">Stay ahead in your coding journey with exclusive updates and insights!</p>
-      <form>
-        <div class="email-label">
-          <label for="email">E-mail</label>
-        </div>
-        <div class="form-inputs">
-          <input id="email" type="email" name="email">
-          <div class="buttons">
-            <input type="submit" value="Sign up" class="button"></input>    
-            <button class="button">Read more</button>    
+      <section class="intro ignore">
+        <h1>Sign up for IceTheCoder's blog</h1>
+        <p class="headline">Stay ahead in your coding journey with exclusive updates and insights!</p>
+        <form>
+          <div class="email-label">
+            <label for="email">E-mail</label>
           </div>
-        </div>
-      </form>
-      <div class="content">
+          <div class="form-inputs">
+            <input id="email" type="email" name="email">
+            <div class="buttons">
+              <input type="submit" value="Sign up" class="button"></input>    
+              <button class="button">Read more</button>    
+            </div>
+          </div>
+        </form>  
+      </section>
+      <section class="content">
         <div class="contact">
           <h2>Get daily articles on coding!</h2>
           <ul>
@@ -55,7 +57,7 @@
             and packed with useful tips. A must-read for anyone passionate about coding!"
           </p> 
         </div>
-      </div>
+      </section>
     </section>
     <section class="image">
       <img id="coding-1" src="coding.webp" alt="Coding setup with computer monitor and laptop">
@@ -69,6 +71,10 @@
         </p>
       </footer>    
     </section>
+    <button id="mode-switch">
+      Switch to Light Mode
+    </button>
   </main>
+  <script src="switch.js"></script>
 </body>
 </html>
