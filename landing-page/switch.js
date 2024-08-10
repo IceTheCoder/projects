@@ -61,6 +61,13 @@ function lightMode() {
 
   // Start the recursive background color setting from the body element
   setBackgroundColor(document.body, 225, 225, 225);
+
+  // EXTRA CODE SPECIFIC FOR THIS PROJECT
+  const buttons = document.querySelectorAll('.button');
+
+  buttons.forEach(button => {
+    button.style.backgroundColor = 'rgb(195, 195, 195)';
+  });
 }
 
 /**
