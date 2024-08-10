@@ -300,3 +300,7 @@ body {
 h1, h2, .spacetime, footer p, p, a {
   color: white;
 }
+
+.version {
+  font-style: italic;
+}
