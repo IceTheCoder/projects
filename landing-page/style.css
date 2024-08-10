@@ -130,7 +130,13 @@ button:active, .button:active {
   position: relative;
   top: 10px;
   box-shadow: none;
+}
 
+@media screen and (max-width: 1490px) {
+  #mode-switch {
+    font-size: 26px;
+    padding: 10px;
+  }  
 }
 
 /* Content styles */
