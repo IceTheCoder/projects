@@ -107,4 +107,7 @@ function darkMode() {
   });
 
   setBackgroundColor(document.body, 34, 34, 34);
+
+  // CODE SPECIFIC TO THIS PROJECT
+  document.getElementById("ticket").style.backgroundColor = "#121212"
 }
