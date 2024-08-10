@@ -6,8 +6,10 @@
   <title>Restaurant website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="../icon.png">
+  <script src="switch.js"></script>
 </head>
-<body class="index-body">
+<!-- https://stackoverflow.com/questions/15838481/multiple-html-files-linked-to-only-one-javascript-file -->
+<body class="index-body" onload="mainPageLoad()">
   <header>
     <iframe src="header.html"></iframe>
   </header>
@@ -45,6 +47,5 @@
       </a>
     </p>
   </footer>
-  <script src="switch.js"></script>
 </body>
 </html>
