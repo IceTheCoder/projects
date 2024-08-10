@@ -18,7 +18,7 @@
             <label for="email">E-mail</label>
           </div>
           <div class="form-inputs">
-            <input id="email" type="email" name="email">
+            <input id="email" type="email" name="email" class="ignore">
             <div class="buttons">
               <input type="submit" value="Sign up" class="button"></input>    
               <button class="button">Read more</button>    
@@ -26,7 +26,7 @@
           </div>
         </form>  
       </section>
-      <section class="content">
+      <div class="content">
         <div class="contact">
           <h2>Get daily articles on coding!</h2>
           <ul>
@@ -38,7 +38,7 @@
           </ul>
           <div class="img-and-contact">
             <img id="coding-2" src="./coding2.webp" alt="Monitor with Java code">
-            <button>Contact</button>  
+            <button id="contact-button">Contact</button>  
           </div>
         </div>
         <div class="reviews">
@@ -62,7 +62,10 @@
     <section class="image">
       <img id="coding-1" src="coding.webp" alt="Coding setup with computer monitor and laptop">
       <p>Caution: This page features a fictional blog intended to demonstrate my proficiency in HTML.</p>
-      <footer>
+      <button id="mode-switch">
+        Switch to Light Mode
+      </button>  
+      <footer class="ignore">
         <p>
           Photo by <a href="https://unsplash.com/@safarslife?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Safar Safarov</a> on <a href="https://unsplash.com/photos/black-flat-screen-computer-monitor-turned-on-displaying-website-koOdUvfGr4c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
