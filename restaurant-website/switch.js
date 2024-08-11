@@ -3,8 +3,15 @@
 function mapButton() {
   // Dark/Light Mode Switch
   console.log("Mapping button");
+
+  let mode = "";
+
   const button = document.getElementById("mode-switch");
-  let mode = "dark";
+  if (localStorage.getItem("mode")) {
+    mode = localStorage.getItem("mode");
+  } else {
+    mode = "dark";
+  }
 
   button.addEventListener("click", function() {
     if (mode === "dark") {
