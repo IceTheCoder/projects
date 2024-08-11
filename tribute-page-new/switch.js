@@ -25,31 +25,17 @@ function lightMode() {
   button.innerHTML = "Switch to Dark Mode";
   document.body.style.backgroundColor = "rgb(255, 255, 255)";
 
-  function setBackgroundColor(element, r, g, b) {
-    // Set the background color for the current element if it's a div
-    if ((element.tagName.toLowerCase() === 'section' || 
-    element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'button' || element.tagName.toLowerCase() === 'input') 
-    && !(element.classList.contains(ignoredElementsClassName))) {
-      element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  let divs = Array.from(document.getElementsByTagName("div"));
+  let sections = Array.from(document.getElementsByTagName("section"));
 
-      // Calculate the new RGB values for the child elements
-      let newR = Math.max(r - 30, 0);
-      let newG = Math.max(g - 30, 0);
-      let newB = Math.max(b - 30, 0);
+  divs.forEach(element => {
+    element.style.backgroundColor = "white";
+  });
 
-      // Iterate through each child element and set its background color
-      Array.from(element.children).forEach(child => {
-        setBackgroundColor(child, newR, newG, newB);
-      });
-    } else {
-      // If the element is not a div, still traverse its children
-      Array.from(element.children).forEach(child => {
-        setBackgroundColor(child, r, g, b);
-      });
-    }
-  }
-
+  sections.forEach(element => {
+    element.style.backgroundColor = "white";
+  });
+  
   let allElements = document.querySelectorAll('*');
 
   // Iterate over each element
