@@ -73,6 +73,15 @@ button:hover, .submit:hover {
 button:active, .submit:active {
   background: #727272;
 }
+.light-mode {
+  background-color: rgb(191, 191, 191)
+}
+.light-mode:hover {
+  background-color: rgb(175, 175, 175)
+}
+.light-mode:active {
+  background-color: rgb(159, 159, 159)
+}
 #mode-switch {
   width: 300px;
   height: 75px;

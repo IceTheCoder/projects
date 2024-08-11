@@ -35,6 +35,7 @@ let ignoredElementsClassName = "ignore";
  */
 function lightMode() {
   const button = document.getElementById("mode-switch");
+  let buttons = document.getElementsByTagName("button");
 
   if (button) {
     button.innerHTML = "Switch to Dark Mode";
@@ -45,7 +46,7 @@ function lightMode() {
     // Set the background color for the current element if it's a div
     if ((element.tagName.toLowerCase() === 'section' || 
     element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'button' || element.tagName.toLowerCase() === 'input') ||
+    element.tagName.toLowerCase() === 'input') ||
     element.tagName.toLowerCase() === 'form'
     && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
@@ -79,6 +80,11 @@ function lightMode() {
   // Start the recursive background color setting from the body element
   setBackgroundColor(document.body, 225, 225, 225);
 
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.color = "black";
+    buttons[i].className = "light-mode";
+  }
+
   if (document.getElementById("iframe")) {
     document.getElementById('iframe').contentWindow.location.reload();
   }
@@ -89,6 +95,8 @@ function lightMode() {
  */
 function darkMode() {
   const button = document.getElementById("mode-switch");
+  let buttons = document.getElementsByTagName("button");
+
   if (button) {
     button.innerHTML = "Switch to Light Mode";
   }
@@ -98,7 +106,7 @@ function darkMode() {
     // Set the background color for the current element if it's a div
     if ((element.tagName.toLowerCase() === 'section' || 
     element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'button' || element.tagName.toLowerCase() === 'input') ||
+    element.tagName.toLowerCase() === 'input') ||
     element.tagName.toLowerCase() === 'form'
     && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
@@ -139,6 +147,12 @@ function darkMode() {
     footer.style.backgroundColor = "rgb(18, 18, 18)";
   })
   // END  
+
+  // Change each button's class to none (i.e. the default, dark mode)
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.color = "white";
+    buttons[i].className = "";
+  }
 
   document.getElementById('iframe').contentWindow.location.reload();
 }
