@@ -46,7 +46,8 @@ function lightMode() {
     // Set the background color for the current element if it's a div
     if ((element.tagName.toLowerCase() === 'section' || 
     element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'form')
+    element.tagName.toLowerCase() === 'input'  || element.tagName.toLowerCase() === 'textarea' ||
+    element.tagName.toLowerCase() === 'form')
     && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
@@ -105,7 +106,7 @@ function darkMode() {
     // Set the background color for the current element if it's a div
     if ((element.tagName.toLowerCase() === 'section' || 
     element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'input' ||
+    element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'textarea' ||
     element.tagName.toLowerCase() === 'form')
     && !(element.classList.contains(ignoredElementsClassName))) {
       element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
