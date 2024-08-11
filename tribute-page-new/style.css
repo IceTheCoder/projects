@@ -51,7 +51,6 @@ a:active {
 
 /* Table of contents */
 .contents {
-  width: 100%;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -221,4 +220,22 @@ td {
 
 .version {
   font-style: italic;
+}
+
+/* Contents wrapper styles */
+.contents-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contents {
+  width: 35%;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
 }
