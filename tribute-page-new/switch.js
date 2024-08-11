@@ -35,7 +35,7 @@ function lightMode() {
   sections.forEach(element => {
     element.style.backgroundColor = "white";
   });
-  
+
   let allElements = document.querySelectorAll('*');
 
   // Iterate over each element
@@ -44,6 +44,12 @@ function lightMode() {
       element.style.color = "black";
     }
   });
+
+  let imageBoxes = Array.from(document.getElementsByClassName("image"));
+
+  imageBoxes.forEach(box => {
+    box.className = "image light-mode-box";
+  })
 
   // Start the recursive background color setting from the body element
   setBackgroundColor(document.body, 225, 225, 225);
@@ -55,41 +61,4 @@ function lightMode() {
 function darkMode() {
   button.innerHTML = "Switch to Light Mode";
   document.body.style.backgroundColor = "rgb(18, 18, 18)";
-
-  function setBackgroundColor(element, r, g, b) {
-    // Set the background color for the current element if it's a div
-    if ((element.tagName.toLowerCase() === 'section' || 
-    element.tagName.toLowerCase() === 'header' || element.tagName.toLowerCase() === 'footer' || 
-    element.tagName.toLowerCase() === 'button' || element.tagName.toLowerCase() === 'input') 
-    && !(element.classList.contains(ignoredElementsClassName))) {
-      element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-
-      // Calculate the new RGB values for the child elements
-      let newR = Math.max(r + 16, 0);
-      let newG = Math.max(g + 16, 0);
-      let newB = Math.max(b + 16, 0);
-
-      // Iterate through each child element and set its background color
-      Array.from(element.children).forEach(child => {
-        setBackgroundColor(child, newR, newG, newB);
-      });
-    } else {
-      // If the element is not a section, still traverse its children
-      Array.from(element.children).forEach(child => {
-        setBackgroundColor(child, r, g, b);
-      });
-    }
-  }
-
-  let allElements = document.querySelectorAll('*');
-
-  // Iterate over each element
-  allElements.forEach(element => {
-    // Change the text color
-    if (!(element.classList.contains(ignoredElementsClassName))) {
-      element.style.color = "white";
-    }
-  });
-
-  setBackgroundColor(document.body, 34, 34, 34);
 }

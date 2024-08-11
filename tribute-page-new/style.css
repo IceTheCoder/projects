@@ -274,3 +274,8 @@ button:active {
 .light-mode:active {
   background-color: rgb(182, 182, 182);
 }
+
+/* Light mode image boxes */
+.light-mode-box::before {
+  background-color: rgba(0, 0, 0, 0.10)
+}
