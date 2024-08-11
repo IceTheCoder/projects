@@ -70,6 +70,10 @@ function lightMode() {
 
   // Start the recursive background color setting from the body element
   setBackgroundColor(document.body, 225, 225, 225);
+
+  if (document.getElementById("iframe")) {
+    document.getElementById('iframe').contentWindow.location.reload();
+  }
 }
 
 /**
@@ -118,6 +122,8 @@ function darkMode() {
   });
 
   setBackgroundColor(document.body, 34, 34, 34);
+
+  document.getElementById('iframe').contentWindow.location.reload();
 }
 
 function checkMode() {
