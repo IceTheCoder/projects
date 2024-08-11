@@ -193,9 +193,7 @@ fieldset {
   max-width: 750px;
   margin: 20px;
   padding: 25px 50px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
 }
 .book-form label,
 .book-form select,
@@ -281,7 +279,7 @@ header {
 
 /* Form */
 .book-form {
-  background: #323232;
+  background: rgb(34, 34, 34);
   border: none;
 }
 .book-form fieldset {
