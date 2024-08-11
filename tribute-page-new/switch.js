@@ -40,7 +40,7 @@ function lightMode() {
 
   // Iterate over each element
   allElements.forEach(element => {
-    if (!(element.classList.contains(ignoredElementsClassName))) {
+    if (!(element.classList.contains(ignoredElementsClassName)) && element.tagName !== "A") {
       element.style.color = "black";
     }
   });
@@ -61,4 +61,33 @@ function lightMode() {
 function darkMode() {
   button.innerHTML = "Switch to Light Mode";
   document.body.style.backgroundColor = "rgb(18, 18, 18)";
+
+  let divs = Array.from(document.getElementsByTagName("div"));
+  let sections = Array.from(document.getElementsByTagName("section"));
+
+  divs.forEach(element => {
+    element.style.backgroundColor = "rgb(18, 18, 18)";
+  });
+
+  sections.forEach(element => {
+    element.style.backgroundColor = "rgb(18, 18, 18)";
+  });
+
+  let allElements = document.querySelectorAll('*');
+
+  // Iterate over each element
+  allElements.forEach(element => {
+    if (!(element.classList.contains(ignoredElementsClassName)) && element.tagName !== "A") {
+      element.style.color = "white";
+    }
+  });
+
+  let imageBoxes = Array.from(document.getElementsByClassName("image"));
+
+  imageBoxes.forEach(box => {
+    box.className = "image";
+  })
+
+  // Only one button
+  document.getElementById("mode-switch").className = "";
 }
