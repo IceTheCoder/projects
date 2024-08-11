@@ -51,8 +51,8 @@ function lightMode() {
     box.className = "image light-mode-box";
   })
 
-  // Start the recursive background color setting from the body element
-  setBackgroundColor(document.body, 225, 225, 225);
+  // Only one button
+  document.getElementById("mode-switch").className = "light-mode";
 }
 
 /**
