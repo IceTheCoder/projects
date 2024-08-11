@@ -132,6 +132,14 @@ function darkMode() {
 
   setBackgroundColor(document.body, 34, 34, 34);
 
+  // CODE SPECIFIC TO THIS PROJECT START
+  let footers = Array.from(document.getElementsByTagName('footer'));
+
+  footers.forEach(footer => {
+    footer.style.backgroundColor = "rgb(18, 18, 18)";
+  })
+  // END  
+
   document.getElementById('iframe').contentWindow.location.reload();
 }
 
@@ -139,6 +147,7 @@ function checkMode() {
   if (localStorage.getItem("mode") === "light") {
     lightMode();  // Make sure this function is defined
   }
+  // Dark mode is the default.
 }
 
 function mainPageLoad() {
