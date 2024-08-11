@@ -80,7 +80,10 @@ function lightMode() {
   // Start the recursive background color setting from the body element
   setBackgroundColor(document.body, 225, 225, 225);
 
+
   // CODE SPECIFIC TO THIS PROJECT START
+  document.body.style.backgroundColor = "rgb(225, 225, 225)";
+
   let footers = Array.from(document.getElementsByTagName('footer'));
 
   footers.forEach(footer => {
@@ -175,4 +178,15 @@ function checkMode() {
 function mainPageLoad() {
   mapButton();
   checkMode();
+}
+
+function IFrameLightMode() {
+  document.body.style.backgroundColor = "white";
+}
+
+function IFrameReload() {
+  if (localStorage.getItem("mode") === "light") {
+    lightMode();
+    IFrameLightMode();
+  }
 }
