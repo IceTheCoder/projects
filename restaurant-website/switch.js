@@ -80,6 +80,14 @@ function lightMode() {
   // Start the recursive background color setting from the body element
   setBackgroundColor(document.body, 225, 225, 225);
 
+  // CODE SPECIFIC TO THIS PROJECT START
+  let footers = Array.from(document.getElementsByTagName('footer'));
+
+  footers.forEach(footer => {
+    footer.style.backgroundColor = "white";
+  })
+  // END  
+
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.color = "black";
     buttons[i].className = "light-mode";
