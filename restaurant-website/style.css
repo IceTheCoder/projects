@@ -264,6 +264,7 @@ footer p {
   width: 100%;
 }
 a {
+  color: skyblue;
   text-decoration: none;
 }
 body:not(.header-body) {
