@@ -52,10 +52,17 @@ p {
   width: 95%;
 }
 
+a {
+  color: white;
+}
+
 
 /* Header styles */
+.intro {
+  background-color: rgb(50, 50, 50);
+}
+
 h1, form, .headline {
-  background-color: #222222;
   color: white;
   margin: 0;
   text-align: center;
@@ -66,7 +73,7 @@ h1 {
   font-size: 72px;
   height: 100px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /* Form styles */
@@ -123,7 +130,13 @@ button:active, .button:active {
   position: relative;
   top: 10px;
   box-shadow: none;
+}
 
+@media screen and (max-width: 1490px) {
+  #mode-switch {
+    font-size: 26px;
+    padding: 10px;
+  }  
 }
 
 /* Content styles */
@@ -142,7 +155,7 @@ button:active, .button:active {
 }
 
 .image {
-  background: #222222;
+  background: rgb(34, 34, 34);
   align-items: center;
 }
 
@@ -164,7 +177,7 @@ li, p {
 
 /* Colours */
 .page {
-  background-color: #323232;
+  background-color: rgb(34, 34, 34);
   color: white;
 }
 
@@ -232,4 +245,8 @@ li, p {
   .content {
     flex-direction: column;
   }
+}
+
+.version {
+  font-style: italic;
 }

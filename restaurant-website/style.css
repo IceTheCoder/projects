@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 main {
   display: flex;
@@ -71,6 +72,20 @@ button:hover, .submit:hover {
 }
 button:active, .submit:active {
   background: #727272;
+}
+.light-mode {
+  background-color: rgb(191, 191, 191)
+}
+.light-mode:hover {
+  background-color: rgb(175, 175, 175)
+}
+.light-mode:active {
+  background-color: rgb(159, 159, 159)
+}
+#mode-switch {
+  width: 300px;
+  height: 75px;
+  font-size: 28px;
 }
 #prev, #next {
   background: rgb(40, 40, 40);
@@ -178,9 +193,7 @@ fieldset {
   max-width: 750px;
   margin: 20px;
   padding: 25px 50px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
 }
 .book-form label,
 .book-form select,
@@ -261,13 +274,13 @@ body:not(.header-body) {
 
 /* Header */
 header {
-  background-color: #b9e1ff;
+  background-color: #121212;
   width: 100%;
 }
 
 /* Form */
 .book-form {
-  background: #323232;
+  background: rgb(34, 34, 34);
   border: none;
 }
 .book-form fieldset {

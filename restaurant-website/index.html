@@ -6,10 +6,12 @@
   <title>Restaurant website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="../icon.png">
+  <script src="switch.js"></script>
 </head>
-<body class="index-body">
+<!-- https://stackoverflow.com/questions/15838481/multiple-html-files-linked-to-only-one-javascript-file -->
+<body class="index-body" onload="mainPageLoad()">
   <header>
-    <iframe title="Header" src="header.html"></iframe>
+    <iframe title="Header" id="header" src="header.html"></iframe>
   </header>
   <main>
     <a href="menu.html"><button id="menu-button" aria-label="Menu">Menu</button></a>
@@ -18,26 +20,29 @@
         <label for="no-people">
           Number of people
         </label>
-        <select id="no-people" aria-label="Number of people">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+        <select id="no-people" class="ignore" aria-label="Number of people">
+          <option class="ignore" value="1">1</option>
+          <option class="ignore" value="2">2</option>
+          <option class="ignore" value="3">3</option>
+          <option class="ignore" value="4">4</option>
         </select>
-        <input type="datetime-local" id="time" aria-label="Date and time">
+        <input class="ignore" type="datetime-local" id="time" aria-label="Date and time">
       </fieldset>
       <button type="submit" id="book" aria-label="Book">Book</button>
     </form>
     <a href="contact.html"><button id="contact-button" aria-label="Contact">Contact</button></a>
   </main>
+  <button id="mode-switch">
+    Switch to Light Mode
+  </button>
   <footer>
     <p>Made by IceTheCoder</p>
     <p>
       Photo by 
-      <a href="https://unsplash.com/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+      <a class="ignore" href="https://unsplash.com/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
         Jason Leung
       </a> on 
-      <a href="https://unsplash.com/photos/photo-of-pub-set-in-room-during-daytime-poI7DelFiVA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+      <a class="ignore" href="https://unsplash.com/photos/photo-of-pub-set-in-room-during-daytime-poI7DelFiVA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
         Unsplash
       </a>
     </p>

@@ -6,8 +6,9 @@
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="../icon.png">
+  <script src="switch.js"></script>
 </head>
-<body>
+<body onload="contactReload()">
   <header>
     <iframe title="Header" src="header.html" style="width:100%;height:100%;"></iframe>
   </header>
@@ -25,17 +26,17 @@
           </div>
           <div class="message">
             <label for="message">Message</label>
-            <textarea name="message" rows="9"></textarea>  
+            <textarea id="textarea" name="message" rows="9"></textarea>  
           </div>  
         </div>  
       </div>
-      <input type="submit" class="submit">
+      <input type="submit" class="submit" id="submit">
     </form>
   </main>
   <footer>
     <p>Made by IceTheCoder</p>
     <p >Inspired from 
-      <a id="contact-page-link" href="https://blog.hubspot.com/service/best-contact-us-pages" target="_blank">
+      <a class="ignore" href="https://blog.hubspot.com/service/best-contact-us-pages" target="_blank">
         https://blog.hubspot.com/service/best-contact-us-pages
       </a>
     </p>
