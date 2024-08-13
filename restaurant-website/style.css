@@ -336,7 +336,7 @@ input, textarea {
 input:hover, textarea:hover {
   background-color: #80c8ff;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1130px) {
   #menu-button, #contact-button {
     display: none;
   }
