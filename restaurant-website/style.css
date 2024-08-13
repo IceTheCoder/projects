@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-width: 360px;
 }
 main {
   display: flex;
@@ -100,7 +101,7 @@ button:active, .submit:active {
   margin: auto;
   margin-top: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .book-form {
     width: 90vw;
   }
@@ -336,7 +337,7 @@ input, textarea {
 input:hover, textarea:hover {
   background-color: #80c8ff;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1130px) {
   #menu-button, #contact-button {
     display: none;
   }
@@ -484,4 +485,11 @@ footer {
   text-align: center;
   margin-top: 1vh;
   width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    margin: 0;
+    width: 100%;
+  }
 }
