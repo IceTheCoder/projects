@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Array Transformation</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
 </head>
 <body>
   <h1>Array Transformation</h1>
-  <form id="array-form">
+  <form id="array-form" onsubmit="return false">
     <label for="array">Type in your array (separate each item with a comma)</label><br>
     <input type="text" id="array" name="array">
+    <button onclick="parseArray()">TEST</button>
   </form>
   <div class="each-item">
     <h1>Operations with each item</h1>
