@@ -16,7 +16,7 @@
   </form>
   <div class="each-item">
     <h1>Operations with each item</h1>
-    <form id="addition">
+    <form id="addition" onsubmit="handleSubmit(event, this.id)">
       <h2>Addition</h2>
       <div class="content">
         <label for="add">Add</label>
@@ -24,7 +24,7 @@
       </div>
       <input type="submit" value="Run">
     </form>
-    <form id="subtraction">
+    <form id="subtraction" onsubmit="handleSubmit(event, this.id)">
       <h2>Subtraction</h2>
       <div class="content">
         <label for="subtract">Subtract</label>
@@ -32,7 +32,7 @@
       </div>
       <input type="submit" value="Run">
     </form>
-    <form id="multiplication">
+    <form id="multiplication" onsubmit="handleSubmit(event, this.id)">
       <h2>Multiplication</h2>
       <div class="content">
         <label for="multiply">Multiply</label>
@@ -40,7 +40,7 @@
       </div>
       <input type="submit" value="Run">
     </form>
-    <form id="division">
+    <form id="division" onsubmit="handleSubmit(event, this.id)">
       <h2>Division</h2>
       <div class="content">
         <label for="divide">Divide</label>
@@ -48,12 +48,12 @@
       </div>
       <input type="submit" value="Run">
     </form>
-    <form id="square-of">
+    <form id="square-of" onsubmit="handleSubmit(event, this.id)">
       <h2>Square</h2>
       <label for="square">Square</label>
       <input type="submit" value="Run">
     </form>
-    <form id="square-root">
+    <form id="square-root" onsubmit="handleSubmit(event, this.id)">
       <h2>Square Root</h2>
       <label for="sqrt">Square Root</label>
       <input type="submit" value="Run">
@@ -61,21 +61,21 @@
   </div>
   <div class="filter">
     <h1>Filter</h1>
-    <form id="greater-than">
+    <form id="greater-than" onsubmit="handleSubmit(event, this.id)">
       <div class="content">
         <label for="greater">Show only numbers greater than</label>
         <input type="number" id="greater" name="greater" step="0.00000000000000001">  
       </div>
       <input type="submit" value="Run">
     </form>
-    <form id="smaller-than">
+    <form id="smaller-than" onsubmit="handleSubmit(event, this.id)">
       <div class="content">
         <label for="greater">Show only numbers smaller than</label>
         <input type="number" id="smaller" name="smaller" step="0.00000000000000001">  
       </div>
       <input type="submit" value="Run">
     </form>
-    <form id="divisible-by">
+    <form id="divisible-by" onsubmit="handleSubmit(event, this.id)">
       <div class="content">
         <label for="divisible">Show only numbers divisible by</label>
         <input type="number" id="divisible" name="divisible" step="0.00000000000000001">  
@@ -85,12 +85,12 @@
   </div>
   <div class="all-items">
     <h1>Operations with all items</h1>
-    <form id="sum-of">
+    <form id="sum-of" onsubmit="handleSubmit(event, this.id)">
       <h2>Sum</h1>
       <label for="sum">Sum</label>
       <input type="submit" value="Run">  
     </form>
-    <form id="product-of">
+    <form id="product-of" onsubmit="handleSubmit(event, this.id)">
       <h2>Product</h1>
       <label for="product">Product</label>
       <input type="submit" value="Run">  

@@ -1,9 +1,5 @@
-let array = [];
-
-let addition = document.getElementById("addition").addEventListener("submit", add);
-
 function parseArray() {
-  array = [];
+  let array = [];
   let text = document.getElementById("array").value;
   let element = "";
   for (let i = 0; i < text.length; i++) {
@@ -21,14 +17,50 @@ function parseArray() {
       array.push(Number(element));
     }
   }
-  console.log(array);
+  return array;
 }
 
-function operate(operation) {
-  switch (operation) {
+function handleSubmit(event, formId) {
+  event.preventDefault();
+
+  let array = parseArray();
+
+
+  switch (formId) {
     case "addition":
+      for (i = 0; i < array.length; i++) {
+        array[i] += Number(document.getElementById("add").value);
+      }    
+      break;
+    case "subtraction":
+      for (i = 0; i < array.length; i++) {
+        array[i] -= Number(document.getElementById("subtract").value);
+      }    
+      break;
+    case "multiplication":
+      for (i = 0; i < array.length; i++) {
+        array[i] *= Number(document.getElementById("multiply").value);
+      }    
+      break;
+    case "division":
+      for (i = 0; i < array.length; i++) {
+        array[i] /= Number(document.getElementById("divide").value);
+      }    
       break;
   }
+
+  // Update array
+  let text = ""
+
+  for (i = 0; i < array.length; i++) {
+    if (i !== 0) {
+      text += `, ${array[i]}`;
+    } else {
+      text += `${array[i]}`;
+    }
+  }
+
+  document.getElementById("array").value = text;
 }
 
 const add = (a, b) => a + b;
