@@ -1,3 +1,4 @@
+/* We need this to make sure the up/down increment/decrement buttons are hidden on inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -5,6 +6,23 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+body {
+  background: #121212;
+}
+
 * {
   font-family: 'Roboto', Arial, sans-serif;
+  color: white;
+}
+
+input {
+  color: black;
+}
+
+h1 {
+  text-align: center;
 }
