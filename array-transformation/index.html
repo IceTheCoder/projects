@@ -10,11 +10,12 @@
 <body>
   <h1>Array Transformation</h1>
   <form id="array-form" onsubmit="return false">
-    <label for="array">Type your array, <br>separating each number with a comma</label><br>
+    <label for="array">Type your array, separating each number with a comma</label>
+    <br>
     <input type="text" id="array" name="array">
   </form>
   <div class="each-item">
-    <h1>Operations with each item</h1>
+    <h2>Operations with each item</h2>
     <form id="addition" onsubmit="handleSubmit(event, this.id)">
       <div class="content">
         <label for="add">Add</label>
@@ -57,7 +58,7 @@
     </form>
   </div>
   <div class="filter">
-    <h1>Filter</h1>
+    <h2>Filter</h2>
     <form id="greater-than" onsubmit="handleSubmit(event, this.id)">
       <div class="content">
         <label for="greater">Show only numbers greater than</label>
@@ -81,7 +82,7 @@
     </form>
   </div>
   <div class="all-items">
-    <h1>Operations with all items</h1>
+    <h2>Operations with all items</h2>
     <form id="average-of" onsubmit="handleSubmit(event, this.id)">
       <label for="average">Average</label>
       <input type="submit" value="Run" id="average">
