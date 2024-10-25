@@ -34,8 +34,10 @@ h2 {
 }
 
 label {
-  text-align: center;
   font-size: 24px;
+}
+label[for=array] {
+  text-align: center;
 }
 
 input {
@@ -55,6 +57,8 @@ input[type=submit] {
   background: #c0e3fc;
   color: #2A3132;
   height: 25px;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 input[type=number] {
@@ -77,10 +81,6 @@ input[type=number] {
 
 .filter form label {
   margin-top: 10px;
-}
-
-.filter form input[type=submit] {
-  height: 30px;
 }
 
 form {
