@@ -12,6 +12,15 @@ input[type=number] {
 
 body {
   background: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+main {
+  max-width: 450px;
 }
 
 * {
