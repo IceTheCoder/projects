@@ -48,6 +48,20 @@ input[type=submit] {
   margin-left: auto;
   margin-top: 5px;
   margin-bottom: 5px;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  padding: 0;
+  background: #c0e3fc;
+  color: #2A3132;
+  height: 25px;
+}
+
+input[type=number] {
+  height: 25px;
+  padding: 0 4px;
+  border-radius: 0;
+  border: none;
 }
 
 .content {
