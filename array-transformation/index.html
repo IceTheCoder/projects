@@ -14,6 +14,27 @@
     <br>
     <input type="text" id="array" name="array">
   </form>
+  <div class="all-items">
+    <h2>Operations with all items</h2>
+    <form id="average-of" onsubmit="handleSubmit(event, this.id)">
+      <label for="average">Average</label>
+      <input type="submit" value="Run" id="average">
+      <label for="average-result">Result</label>
+      <input type="text" id="average-result" disabled>  
+    </form>
+    <form id="sum-of" onsubmit="handleSubmit(event, this.id)">
+      <label for="sum">Sum</label>
+      <input type="submit" value="Run">
+      <label for="sum-result">Result</label>
+      <input type="text" id="sum-result" disabled>
+    </form>
+    <form id="product-of" onsubmit="handleSubmit(event, this.id)">
+      <label for="product">Product</label>
+      <input type="submit" value="Run">
+      <label for="product-result">Result</label>
+      <input type="text" id="product-result" disabled>
+    </form>
+  </div>
   <div class="each-item">
     <h2>Operations with each item</h2>
     <form id="addition" onsubmit="handleSubmit(event, this.id)">
@@ -79,27 +100,6 @@
         <input type="number" id="divisible" name="divisible" step="0.00000000000000001">  
       </div>
       <input type="submit" value="Run">
-    </form>
-  </div>
-  <div class="all-items">
-    <h2>Operations with all items</h2>
-    <form id="average-of" onsubmit="handleSubmit(event, this.id)">
-      <label for="average">Average</label>
-      <input type="submit" value="Run" id="average">
-      <label for="average-result">Result</label>
-      <input type="text" id="average-result" disabled>  
-    </form>
-    <form id="sum-of" onsubmit="handleSubmit(event, this.id)">
-      <label for="sum">Sum</label>
-      <input type="submit" value="Run">
-      <label for="sum-result">Result</label>
-      <input type="text" id="sum-result" disabled>
-    </form>
-    <form id="product-of" onsubmit="handleSubmit(event, this.id)">
-      <label for="product">Product</label>
-      <input type="submit" value="Run">
-      <label for="product-result">Result</label>
-      <input type="text" id="product-result" disabled>
     </form>
   </div>
 </body>
