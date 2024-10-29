@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Transformation</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Array Transformation</h1>
+    <form id="array-form" onsubmit="return false">
+      <label for="array">Type your array, separating each number with a comma</label>
+      <br>
+      <input type="text" id="array" name="array">
+    </form>
+    <div class="all-items">
+      <h2>Operations with all items</h2>
+      <form id="average-of" onsubmit="handleSubmit(event, this.id)">
+        <label for="average">Average</label>
+        <input type="submit" value="Run" id="average">
+        <label for="average-result">Result</label>
+        <input type="text" id="average-result" disabled>  
+      </form>
+      <form id="sum-of" onsubmit="handleSubmit(event, this.id)">
+        <label for="sum">Sum</label>
+        <input type="submit" value="Run">
+        <label for="sum-result">Result</label>
+        <input type="text" id="sum-result" disabled>
+      </form>
+      <form id="product-of" onsubmit="handleSubmit(event, this.id)">
+        <label for="product">Product</label>
+        <input type="submit" value="Run">
+        <label for="product-result">Result</label>
+        <input type="text" id="product-result" disabled>
+      </form>
+    </div>
+    <div class="each-item">
+      <h2>Operations with each item</h2>
+      <form id="addition" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="add">Add</label>
+          <input type="number" id="add" name="add" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+      <form id="subtraction" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="subtract">Subtract</label>
+          <input type="number" id="subtract" name="subtract" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+      <form id="multiplication" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="multiply">Multiply</label>
+          <input type="number" id="multiply" name="multiply" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+      <form id="division" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="divide">Divide</label>
+          <input type="number" id="divide" name="divide" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+      <form id="square-of" onsubmit="handleSubmit(event, this.id)">
+        <label for="square">Square</label>
+        <input type="submit" value="Run" id="square">
+      </form>
+      <form id="square-root" onsubmit="handleSubmit(event, this.id)">
+        <label for="sqrt">Square Root</label>
+        <input type="submit" value="Run" id="sqrt">
+      </form>
+      <form id="integer" onsubmit="handleSubmit(event, this.id)">
+        <label for="int">Turn to integer</label>
+        <input type="submit" value="Run" id="int">
+      </form>
+    </div>
+    <div class="filter">
+      <h2>Filter</h2>
+      <form id="greater-than" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="greater">Show only numbers greater than</label>
+          <input type="number" id="greater" name="greater" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+      <form id="smaller-than" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="greater">Show only numbers smaller than</label>
+          <input type="number" id="smaller" name="smaller" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+      <form id="divisible-by" onsubmit="handleSubmit(event, this.id)">
+        <div class="content">
+          <label for="divisible">Show only numbers divisible by</label>
+          <input type="number" id="divisible" name="divisible" step="0.00000000000000001">  
+        </div>
+        <input type="submit" value="Run">
+      </form>
+    </div>  
+  </main>
+</body>
+</html>
