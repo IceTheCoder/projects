@@ -1,6 +1,8 @@
 * {
   font-family: 'Roboto', Arial, sans-serif;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,4 +13,39 @@ body {
 h1 {
   text-align: center;
   font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Icons */
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
+}
+
+/* Search bar */
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #424242;
+  padding: 8px 10px;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+
+#search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input[type=text] {
+  height: 24px;
+  width: 200px;
+  color: black;
+  font-size: 18px;
+  padding: 0 3px;
 }
