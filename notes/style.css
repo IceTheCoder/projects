@@ -1,0 +1,14 @@
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #121212;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
