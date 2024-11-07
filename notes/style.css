@@ -13,13 +13,16 @@ body {
 h1 {
   text-align: center;
   font-size: 48px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* Icons */
 .icon {
   width: 36px;
   height: 36px;
+}
+
+#search-icon {
   margin-right: 5px;
 }
 
@@ -32,7 +35,6 @@ h1 {
 form {
   background: #424242;
   padding: 8px 10px;
-  padding-right: 15px;
   border-radius: 10px;
 }
 
