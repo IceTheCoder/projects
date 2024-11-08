@@ -17,7 +17,7 @@ h1 {
 }
 
 /* Icons */
-.icon {
+.icon, button {
   width: 36px;
   height: 36px;
 }
@@ -33,9 +33,10 @@ h1 {
 }
 
 form {
-  background: #424242;
+  background: #323232;
   padding: 8px 10px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 #search {
@@ -50,4 +51,33 @@ input[type=text] {
   color: black;
   font-size: 18px;
   padding: 0 3px;
+}
+
+/* Note Previews */
+#notes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-preview {
+  width: 250px;
+  height: 50px;
+  padding: 0 10px;
+  background: #222222;
+  display: flex;
+  align-items: center;
+}
+
+.note-title {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Delete Button */
+.delete-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
