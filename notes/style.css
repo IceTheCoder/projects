@@ -81,3 +81,27 @@ input[type=text] {
   border: none;
   cursor: pointer;
 }
+
+/* Back Button */
+#back-button {
+  margin: 10px;
+}
+
+/* Note Header */
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Note Title */
+h2 {
+  font-size: 24px;
+  text-align: center;
+  width: 80vw;
+  margin: 10px 0;
+}
+
+/* Note Text */
+p {
+  margin: 5px 13px;
+}
