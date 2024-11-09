@@ -95,7 +95,7 @@ header {
 
 /* Note Title */
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   width: 80vw;
   margin: 10px 0;
@@ -104,4 +104,16 @@ h2 {
 /* Note Text */
 p {
   margin: 5px 13px;
+  max-width: 1080px;
+}
+
+h1 {
+  max-width: 1080px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
