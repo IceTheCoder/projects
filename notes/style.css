@@ -9,6 +9,12 @@ body {
   background-color: #121212;
 }
 
+#index-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Title */
 h1 {
   text-align: center;
