@@ -15,16 +15,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
       let numbers = [];
 
       Object.keys(localStorage).forEach((key) => {
-        if (typeof key == "number") {
-          numbers.push(key);
+        let parsedKey = parseInt(key, 10);
+
+        if (!isNaN(parsedKey)) {
+          numbers.push(parsedKey);
         }
-
-        let maxValue = Math.max(...numbers);
-
-        let loadedNote = Math.max(maxValue + 1, 0)
-
-        alert(loadedNote);
       });
+
+      alert(numbers);
+
+      let maxValue = Math.max(...numbers);
+
+      let loadedNote = Math.max(maxValue + 1, 0)
+
+      localStorage.setItem("loadedNote", loadedNote);
     }
   });
 })
