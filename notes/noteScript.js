@@ -1,7 +1,7 @@
 "use strict";
 
 /* Save notes as they are written */
-document.addEventListener('keydown', function(event) {
+document.addEventListener('input', function(event) {
   const title = document.getElementById("note-title").innerHTML;
   const content = document.getElementById("note-content").innerHTML;
 
