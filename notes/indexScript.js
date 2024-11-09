@@ -12,10 +12,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
     window.location.href = './note.html';
 
     function addNote() {
+      let numbers = [];
+
       Object.keys(localStorage).forEach((key) => {
-        alert(localStorage.getItem(key));
-      })
-      alert("ADding note...");
+        if (typeof key == "number") {
+          numbers.push(key);
+        }
+
+        let maxValue = Math.max(...numbers);
+
+        let loadedNote = Math.max(maxValue + 1, 0)
+
+        alert(loadedNote);
+      });
     }
   });
 })
