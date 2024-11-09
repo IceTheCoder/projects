@@ -1,3 +1,5 @@
+"use strict";
+
 /* Adding note */
 document.addEventListener('DOMContentLoaded', function(event) {
   const addButton = document.getElementById('add-button');
@@ -5,9 +7,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
   addButton.addEventListener('click', function(event) {
     event.preventDefault();
 
-    alert("ADding note...");
+    addNote();
 
     window.location.href = './note.html';
+
+    function addNote() {
+      Object.keys(localStorage).forEach((key) => {
+        alert(localStorage.getItem(key));
+      })
+      alert("ADding note...");
+    }
   });
 })
   
