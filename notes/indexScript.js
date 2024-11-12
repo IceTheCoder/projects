@@ -77,27 +77,23 @@ document.addEventListener('DOMContentLoaded', function(event) {
     });
   }
 
+  function loading() {
+    const anchors = document.querySelectorAll("a");
+
+    anchors.forEach((anchor) => {
+      anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const noteId = event.target.id;
+
+        localStorage.setItem("loadedNote", noteId);
+
+        window.location.href = "./note.html";
+      })
+    });
+  }
+
   adding();
   showing();
+  loading();
 })
-
-/* Loading note */
-function handleClick(event) {
-  event.preventDefault();
-
-  const noteId = event.target.id;
-  if (noteId) {
-    localStorage.setItem("loadedNote", noteId); // Store the note ID for the current note
-  }
-
-  // Navigate to the original link (the note page)
-  window.location.href = event.target.href;
-}
-
-const anchors = document.querySelectorAll('a');
-
-anchors.forEach(anchor => {
-  if (anchor.classList.contains("note-title")) {
-    anchor.addEventListener('click', handleClick);
-  }
-});
