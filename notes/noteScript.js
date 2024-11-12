@@ -11,5 +11,8 @@ document.addEventListener('input', function(event) {
   console.log("Saving note...");
 });
 
-alert(localStorage.getItem("loadedNote"));
-
+/* Open notes correctly */
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.getElementById("note-title").innerHTML = JSON.parse(localStorage.getItem(localStorage.getItem("loadedNote"))).title.replace(/<br\s*\/?>$/i, '');
+  document.getElementById("note-content").innerHTML = JSON.parse(localStorage.getItem(localStorage.getItem("loadedNote"))).content;
+});

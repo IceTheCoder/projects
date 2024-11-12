@@ -123,3 +123,9 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
+
+/* Make a clickable */
+a {
+  cursor: pointer;
+}

@@ -22,9 +22,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             numbers.push(parsedKey);
           }
         });
-  
-        alert(numbers);
-  
+    
         let maxValue = Math.max(...numbers);
   
         let loadedNote = Math.max(maxValue + 1, 0)
@@ -45,8 +43,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
         
         // Create the link element for the note title
         const noteLink = document.createElement("a");
-        noteLink.href = "./note.html";
+        noteLink.href = "./note.html"; // Don't put a href; linking is dealt with within JS
         noteLink.className = "note-title";
+        noteLink.id = i;
         noteLink.textContent = JSON.parse(localStorage.getItem(i)).title.replace(/<br\s*\/?>$/i, ''); // Set the text for the note title
         
         // Create the button for the delete option
@@ -81,4 +80,24 @@ document.addEventListener('DOMContentLoaded', function(event) {
   adding();
   showing();
 })
-  
+
+/* Loading note */
+function handleClick(event) {
+  event.preventDefault();
+
+  const noteId = event.target.id;
+  if (noteId) {
+    localStorage.setItem("loadedNote", noteId); // Store the note ID for the current note
+  }
+
+  // Navigate to the original link (the note page)
+  window.location.href = event.target.href;
+}
+
+const anchors = document.querySelectorAll('a');
+
+anchors.forEach(anchor => {
+  if (anchor.classList.contains("note-title")) {
+    anchor.addEventListener('click', handleClick);
+  }
+});
