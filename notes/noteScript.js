@@ -7,7 +7,7 @@ document.addEventListener('input', function(event) {
 
   const entry = { title, content };
 
-  localStorage.setItem(localStorage.getItem("loadedNote"), JSON.stringify(entry));
+  localStorage.setItem(localStorage.getItem("loadedNote").toString(), JSON.stringify(entry));
   console.log("Saving note...");
 });
 

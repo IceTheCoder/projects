@@ -26,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
         let maxValue = Math.max(...numbers);
   
         let loadedNote = Math.max(maxValue + 1, 0)
-  
+        alert(loadedNote);
+
         localStorage.setItem("loadedNote", loadedNote);
+        alert(localStorage.getItem("loadedNote"));
       }
     });
   }
@@ -81,15 +83,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
     const anchors = document.querySelectorAll("a");
 
     anchors.forEach((anchor) => {
-      anchor.addEventListener('click', function(event) {
-        event.preventDefault();
-
-        const noteId = event.target.id;
-
-        localStorage.setItem("loadedNote", noteId);
-
-        window.location.href = "./note.html";
-      })
+      if (!isNaN(parseInt(anchor.id, 10))) {
+        anchor.addEventListener('click', function(event) {
+          event.preventDefault();
+  
+          const noteId = event.target.id;
+  
+          localStorage.setItem("loadedNote", noteId);
+  
+          window.location.href = "./note.html";
+        });
+      }
     });
   }
 
