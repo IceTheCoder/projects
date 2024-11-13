@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         // Create the button for the delete option
         const deleteButton = document.createElement("button");
         deleteButton.className = "delete-button";
+        deleteButton.onclick = openPopup;
         
         // Create the image for the delete icon
         const deleteIcon = document.createElement("img");
@@ -95,7 +96,18 @@ document.addEventListener('DOMContentLoaded', function(event) {
     });
   }
 
+
   adding();
   showing();
   loading();
-})
+});
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
