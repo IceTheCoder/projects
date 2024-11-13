@@ -26,10 +26,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
         let maxValue = Math.max(...numbers);
   
         let loadedNote = Math.max(maxValue + 1, 0)
-        alert(loadedNote);
 
         localStorage.setItem("loadedNote", loadedNote);
-        alert(localStorage.getItem("loadedNote"));
       }
     });
   }
