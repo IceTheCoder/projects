@@ -100,6 +100,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
   adding();
   showing();
   loading();
+
+  const searchForm = document.getElementById("search-input");
+
+  searchForm.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+    }
+  });
 });
 
 let popup = document.getElementById("popup");
