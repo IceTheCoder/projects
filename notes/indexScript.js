@@ -104,7 +104,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 let popup = document.getElementById("popup");
 
-function openPopup() {
+function openPopup(event) {
+  const button = event.currentTarget;
+
+  const notePreviewDiv = button.closest('.note-preview');
+
+  const anchor = notePreviewDiv.querySelector('.note-title');
+
+  const anchorId = anchor.id;
+
+  alert("Anchor ID: " + anchorId);
+
   popup.classList.add("open-popup");
 }
 
