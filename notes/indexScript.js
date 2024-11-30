@@ -105,19 +105,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
 let popup = document.getElementById("popup");
 
 function openPopup(event) {
+  // Get the button that was clicked
   const button = event.currentTarget;
 
+  // Nearest div parent
   const notePreviewDiv = button.closest('.note-preview');
 
+  // Anchor element inside that div parent
   const anchor = notePreviewDiv.querySelector('.note-title');
 
   const anchorId = anchor.id;
 
-  alert("Anchor ID: " + anchorId);
+  localStorage.setItem("anchorId", anchorId);
 
   popup.classList.add("open-popup");
 }
 
 function closePopup() {
   popup.classList.remove("open-popup");
+}
+
+function deleteSelectedNote() {
+  const noteId = localStorage.getItem("anchorId");
+  localStorage.removeItem(noteId);
+  closePopup();
+  location.reload();
 }
