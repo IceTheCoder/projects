@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       function addNote(i) {
         // Create the main div
         const noteDiv = document.createElement("div");
-        noteDiv.className = "note-preview";
+        noteDiv.className = "note-preview show";
         
         // Create the link element for the note title
         const noteLink = document.createElement("a");
@@ -103,10 +103,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   const searchForm = document.getElementById("search-input");
 
-  searchForm.addEventListener("keydown", (event) => {
+  function searching() {
+    const text = document.getElementById("search-input").value;
+
+    for (const key in localStorage) {
+      if (!isNaN(key)) {
+        const title = JSON.parse(localStorage.getItem(key)).title.replace(/<br\s*\/?>$/i, '');
+        const content = JSON.parse(localStorage.getItem(key)).content.replace(/<br\s*\/?>$/i, '');
+        if (title.search(text) === -1 && content.search(text) === -1) {
+          document.getElementById(key).classList.remove("show");
+          document.getElementById(key).classList.add("hide");
+        } else {
+          document.getElementById(key).classList.remove("hide");
+          document.getElementById(key).classList.add("show");
+        }
+      }
+    }
+  }
+
+  searchForm.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
     }
+    searching();
   });
 });
 
