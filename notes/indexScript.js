@@ -110,12 +110,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
       if (!isNaN(key)) {
         const title = JSON.parse(localStorage.getItem(key)).title.replace(/<br\s*\/?>$/i, '');
         const content = JSON.parse(localStorage.getItem(key)).content.replace(/<br\s*\/?>$/i, '');
+      
+        const anchor = document.getElementById(key);
+        const notePreviewDiv = anchor.closest('.note-preview');
+
         if (title.search(text) === -1 && content.search(text) === -1) {
-          document.getElementById(key).classList.remove("show");
-          document.getElementById(key).classList.add("hide");
+          notePreviewDiv.classList.remove("show");
+          notePreviewDiv.classList.add("hide");
         } else {
-          document.getElementById(key).classList.remove("hide");
-          document.getElementById(key).classList.add("show");
+          notePreviewDiv.classList.remove("hide");
+          notePreviewDiv.classList.add("show");
         }
       }
     }
