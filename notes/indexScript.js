@@ -46,8 +46,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
         noteLink.href = "./note.html"; // Don't put a href; linking is dealt with within JS
         noteLink.className = "note-title";
         noteLink.id = i;
-        noteLink.textContent = JSON.parse(localStorage.getItem(i)).title.replace(/<br\s*\/?>$/i, ''); // Set the text for the note title
-        
+        noteLink.textContent = JSON.parse(localStorage.getItem(i)).title
+          .replace(/<br\s*\/?>$/i, '') // Set the text for the note title
+          .replace(/&nbsp;/g, '\u00A0');
         // Create the button for the delete option
         const deleteButton = document.createElement("button");
         deleteButton.className = "delete-button";
