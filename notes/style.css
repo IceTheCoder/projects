@@ -1,0 +1,182 @@
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+}
+
+#index-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+/* Icons */
+.icon, button {
+  width: 36px;
+  height: 36px;
+}
+
+#search-icon {
+  margin-right: 5px;
+}
+
+/* Search bar */
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #323232;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input[type=text] {
+  height: 24px;
+  width: 200px;
+  color: black;
+  font-size: 18px;
+  padding: 0 3px;
+}
+
+/* Note Previews */
+#notes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-preview {
+  width: 250px;
+  height: 50px;
+  padding: 0 10px;
+  margin: 5px 0;
+  background: #222222;
+  display: flex;
+  align-items: center;
+}
+
+.note-title {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Delete Button */
+.delete-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Back Button */
+#back-button {
+  margin: 10px;
+}
+
+/* Note Header */
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Note Title */
+h2 {
+  font-size: 28px;
+  text-align: center;
+  width: 80vw;
+  margin: 10px 0;
+}
+
+/* Note Text */
+p {
+  margin: 5px 13px;
+  max-width: 1080px;
+}
+
+h1 {
+  max-width: 1080px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Make anchors clickable */
+a {
+  cursor: pointer;
+}
+
+/* https://www.youtube.com/watch?v=AF6vGYIyV8M */
+/* Yes/No buttons */
+.btn {
+  width: 50px;
+  height: 30px;
+  border: none;
+  background: #323232;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #373737;
+}
+
+.btn:active {
+  background: #404040;
+}
+
+/* Popup */
+.popup {
+  width: 240px;
+  height: 80px;
+  background: #474747;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
